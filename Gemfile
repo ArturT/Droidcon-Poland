@@ -41,6 +41,7 @@ gem 'jquery-ui-rails'
 gem 'jquery_datepicker', github: 'ArturT/jquery_datepicker', branch: 'rails4'
 
 gem 'activeadmin', github: 'gregbell/active_admin'
+gem 'devise'
 gem 'just-datetime-picker'
 gem 'mini_magick'
 gem 'carrierwave'
