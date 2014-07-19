@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-KrakDroid::Application.load_tasks
+DroidconPoland::Application.load_tasks
