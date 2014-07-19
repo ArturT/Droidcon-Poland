@@ -20,7 +20,10 @@ Conference Website
 
 # Production env
 
-Set `ENV['SECRET_TOKEN']`. Generate it with `rake secret`.
+Set ENVs. Generate them with `rake secret`.
+
+    ENV['SECRET_TOKEN']
+    ENV['DEVISE_SECRET_KEY']
 
 
 ## Tips

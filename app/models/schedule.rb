@@ -1,8 +1,6 @@
 class Schedule < ActiveRecord::Base
-  just_define_datetime_picker :start_time, add_to_attr_accessible: true
-  just_define_datetime_picker :end_time, add_to_attr_accessible: true
-
-  attr_accessible :topic_pl, :topic_en, :description_pl, :description_en, :start_time, :end_time, :speaker_id, :room_id
+  just_define_datetime_picker :start_time
+  just_define_datetime_picker :end_time
 
   belongs_to :speaker
   belongs_to :room
