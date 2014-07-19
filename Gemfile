@@ -46,8 +46,6 @@ gem 'activeadmin'
 gem 'just-datetime-picker'
 gem 'mini_magick'
 gem 'carrierwave'
-gem 'carrierwave-ftp', :require => 'carrierwave/storage/ftp' # FTP only
-gem 'settingslogic'
 
 
 # To use ActiveModel has_secure_password
