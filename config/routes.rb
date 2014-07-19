@@ -3,9 +3,9 @@ DroidconPoland::Application.routes.draw do
 
   devise_for :admin_users, ActiveAdmin::Devise.config
 
-  get '/:locale' => 'pages#index'
+  get '/:locale' => 'home#index'
 
-  root to: 'pages#index'
+  root to: 'home#index'
 
   resource :api, only: [] do
     get :speakers
