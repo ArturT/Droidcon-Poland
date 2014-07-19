@@ -5,8 +5,8 @@ class Schedule < ActiveRecord::Base
   belongs_to :speaker
   belongs_to :room
 
-  scope :with_time, where('start_time IS NOT NULL AND end_time IS NOT NULL')
-  scope :start_time_asc, order('start_time ASC')
+  scope :with_time, -> { where('start_time IS NOT NULL AND end_time IS NOT NULL') }
+  scope :start_time_asc, -> { order('start_time ASC') }
 
   validates :topic_pl, presence: true
   validates :topic_en, presence: true

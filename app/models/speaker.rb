@@ -3,8 +3,8 @@ class Speaker < ActiveRecord::Base
 
   has_many :schedules, dependent: :destroy
 
-  scope :speakers, includes(:schedules).where(organizer: false).order('name ASC')
-  scope :organizers, where(organizer: true).order('name ASC')
+  scope :speakers, -> { includes(:schedules).where(organizer: false).order('name ASC') }
+  scope :organizers, -> { where(organizer: true).order('name ASC') }
 
   validates :name, presence: true
   #validates :description_pl, presence: true
