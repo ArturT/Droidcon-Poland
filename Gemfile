@@ -3,21 +3,34 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.4'
 gem 'thin'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
 gem 'mysql2'
 
-# Gems used only for assets and not required
-# in production environments by default.
 gem 'sass-rails', '~> 4.0.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'less-rails'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer'
-
 gem 'uglifier'
+
+gem 'simple_form'
+
+gem 'jquery-rails'
+gem 'jquery-ui-rails'
+gem 'jquery_datepicker', github: 'ArturT/jquery_datepicker', branch: 'rails4'
+
+gem 'activeadmin', github: 'gregbell/active_admin'
+gem 'devise'
+gem 'just-datetime-picker'
+
+gem 'mini_magick'
+gem 'carrierwave'
+
+
+group :development do
+  gem 'spring'
+  gem 'spring-commands-rspec'
+end
 
 group :development, :test do
   gem 'rspec-rails'
@@ -27,37 +40,6 @@ group :development, :test do
   gem 'quiet_assets'
 end
 
-# Use unicorn as the app server on heroku
 group :production do
   gem 'unicorn'
 end
-
-# simple form
-gem 'simple_form'
-
-gem 'jquery-rails'
-# http://rubydoc.info/gems/jquery-ui-rails/1.0.0/frames
-gem 'jquery-ui-rails'
-gem 'jquery_datepicker', github: 'ArturT/jquery_datepicker', branch: 'rails4'
-
-gem 'activeadmin', github: 'gregbell/active_admin'
-gem 'devise'
-gem 'just-datetime-picker'
-gem 'mini_magick'
-gem 'carrierwave'
-
-
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'debugger'
