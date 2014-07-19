@@ -49,7 +49,6 @@ gem 'carrierwave'
 gem 'carrierwave-ftp', :require => 'carrierwave/storage/ftp' # FTP only
 gem 'settingslogic'
 
-gem 'rename'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

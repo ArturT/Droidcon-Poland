@@ -174,8 +174,6 @@ GEM
     rdoc (3.12.2)
       json (~> 1.4)
     ref (1.0.5)
-    rename (1.0.2)
-      rails (>= 3.0.0)
     responders (0.9.3)
       railties (~> 3.1)
     rspec (2.11.0)
@@ -257,7 +255,6 @@ DEPENDENCIES
   mysql2
   quiet_assets
   rails (= 3.2.16)
-  rename
   rspec-rails
   sass-rails (~> 3.2.3)
   settingslogic
