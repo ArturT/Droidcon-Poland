@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/ArturT/jquery_datepicker.git
+  revision: 5055991597a53d1e084ae208e84971a948eff5d8
+  branch: rails4
+  specs:
+    jquery_datepicker (0.4)
+
+GIT
   remote: git://github.com/gregbell/active_admin.git
   revision: 9cfc45330e5ad31977b3ac7b2ccc1f8d6146c73f
   specs:
@@ -96,7 +103,6 @@ GEM
       thor (>= 0.14, < 2.0)
     jquery-ui-rails (5.0.0)
       railties (>= 3.2.16)
-    jquery_datepicker (0.4)
     json (1.8.1)
     just-datetime-picker (0.0.6)
       activeadmin (>= 0.4.4)
@@ -229,7 +235,7 @@ DEPENDENCIES
   factory_girl_rails
   jquery-rails
   jquery-ui-rails
-  jquery_datepicker
+  jquery_datepicker!
   just-datetime-picker
   less-rails
   mini_magick

@@ -38,7 +38,7 @@ gem 'simple_form'
 gem 'jquery-rails'
 # http://rubydoc.info/gems/jquery-ui-rails/1.0.0/frames
 gem 'jquery-ui-rails'
-gem 'jquery_datepicker'
+gem 'jquery_datepicker', github: 'ArturT/jquery_datepicker', branch: 'rails4'
 
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'just-datetime-picker'
