@@ -6,9 +6,7 @@ gem 'thin'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-#gem 'sqlite3'
 gem 'mysql2'
-gem 'pg'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -50,6 +48,8 @@ gem 'mini_magick'
 gem 'carrierwave'
 gem 'carrierwave-ftp', :require => 'carrierwave/storage/ftp' # FTP only
 gem 'settingslogic'
+
+gem 'rename'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
