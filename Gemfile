@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.16'
+gem 'rails', '4.1.4'
 gem 'thin'
 
 # Bundle edge Rails instead:
@@ -10,16 +10,14 @@ gem 'mysql2'
 
 # Gems used only for assets and not required
 # in production environments by default.
-group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'less-rails', '~> 2.2.6'
-  gem 'coffee-rails', '~> 3.2.1'
+gem 'sass-rails', '~> 4.0.0'
+gem 'coffee-rails', '~> 4.0.0'
+gem 'less-rails'
 
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  gem 'therubyracer'
+# See https://github.com/sstephenson/execjs#readme for more supported runtimes
+gem 'therubyracer'
 
-  gem 'uglifier', '>= 1.0.3'
-end
+gem 'uglifier'
 
 group :development, :test do
   gem 'rspec-rails'
@@ -42,7 +40,7 @@ gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'jquery_datepicker'
 
-gem 'activeadmin'
+gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'just-datetime-picker'
 gem 'mini_magick'
 gem 'carrierwave'
