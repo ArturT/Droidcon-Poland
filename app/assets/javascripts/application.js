@@ -12,5 +12,5 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+//= require global
 //= require_tree ../../../vendor/assets/javascripts
