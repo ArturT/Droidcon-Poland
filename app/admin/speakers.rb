@@ -21,6 +21,6 @@ ActiveAdmin.register Speaker do
     column :photo do |speaker|
       image_tag speaker.photo.thumb, size: '100x100'
     end
-    default_actions
+    actions
   end
 end

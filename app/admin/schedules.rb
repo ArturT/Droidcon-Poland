@@ -16,7 +16,7 @@ ActiveAdmin.register Schedule do
     end
     column :start_time
     column :end_time
-    default_actions
+    actions
   end
 
   form do |f|
