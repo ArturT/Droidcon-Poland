@@ -1,0 +1,20 @@
+#!/bin/bash
+# put this file in /etc/init.d/
+APP_NAME=droidcon-poland
+APP_DEFAULT_ENV=production
+SYSTEM_USER=rails
+DIR=/home/${SYSTEM_USER}/${APP_NAME}/current
+PID_FILE=/home/${SYSTEM_USER}/${APP_NAME}/tmp/${APP_NAME}-unicorn.pid
+
+case $1 in
+   start)
+      cd $DIR
+      su -l -c "cd $DIR && RAILS_ENV=$APP_DEFAULT_ENV bundle exec unicorn -c config/unicorn/production.rb -D" $SYSTEM_USER >/dev/null 2>&1
+      ;;
+    stop)
+      cd $DIR
+      kill `cat $PID_FILE` ;;
+    *)
+      echo "usage: $APP_NAME-$APP_DEFAULT_ENV-unicorn {start|stop}" ;;
+esac
+exit 0
