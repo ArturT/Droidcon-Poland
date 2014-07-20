@@ -1,14 +1,10 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
-
 pl:
-  hello: "Witaj Świecie!"
   words:
     show_larger_map: "Wyświetl większą mapę"
     last_updated: 'ostatnia aktualizacja'
   meta:
-    title: "KrakDroid"
-    description: "Konferencja dotycząca programowania i projektowania na system Android. Kraków 7 grudnia 2013."
+    title: "Droidcon Cracow, Poland"
+    description: "Konferencja dotycząca programowania i projektowania na system Android. Kraków 4-5 grudnia 2014."
     keywords: "mobile, systemy mobilne, telefony, android, linux, kraków, cracow, konferencja it"
   common:
     coming_soon: 'Już wkrótce.'
@@ -21,14 +17,14 @@ pl:
       organizers: 'Organizatorzy'
       sponsors: 'Sponsorzy'
       partners: 'Partnerzy'
-    call_for_papers_html: 'Podziel się swoim doświadczeniem<br /> i zostań prelegentem na KrakDroid.'
+    call_for_papers_html: 'Podziel się swoim doświadczeniem<br /> i zostań prelegentem na Droidcon Cracow.'
     call_for_papers_button: 'Zgłoś prezentację'
     registration_button: 'Rejestracja'
   page:
     what_where_how:
       title: 'Co? Gdzie? Jak?'
-      what_is_krakdroid_title: 'Czym jest KrakDroid?'
-      conference_description_html: "KrakDroid jest konferencją poświęconą tworzeniu aplikacji na platformę Android, która odbędzie się 7 grudnia 2013 w Krakowie. Uczestnictwo w niej jest w pełni darmowe."
+      what_is_krakdroid_title: 'Czym jest Droidcon Cracow?'
+      conference_description_html: "Droidcon Cracow jest konferencją poświęconą tworzeniu aplikacji na platformę Android, która odbędzie się 4-5 grudnia 2014 w Krakowie."
       sponsors_title: 'Sponsorzy'
       become_a_sponsore: 'Zostań sponsorem'
       partners_title: 'Partnerzy'
@@ -42,14 +38,13 @@ pl:
       title: 'Dojazd i kontakt'
       we_are_here:
         title: 'Jesteśmy tutaj'
-        description_html: 'Konferencja KrakDroid odbędzie się 7 Grudnia 2013 w <a href="http://www.galiciajewishmuseum.org">Żydowskim Muzeum Galicja</a>, ul. Dajwór 18.'
+        description_html: 'Konferencja Droidcon Cracow odbędzie się 4-5 Grudnia 2014 w TODO'
       write_to_us:
         title: 'Napisz do nas'
-        description_html: 'Czekamy na twoje komentarze na <a href="https://www.facebook.com/KrakDroid">Facebooku</a>, <a href="https://plus.google.com/101136791804282588345">Google+</a> i <a href="https://twitter.com/KrakDroid">Twitterze</a>.'
+        description_html: 'Czekamy na twoje komentarze na <a href="https://www.facebook.com/DroidconCracow">Facebooku</a>, <a href="https://plus.google.com/101136791804282588345">Google+</a> i <a href="https://twitter.com/DroidconCracow">Twitterze</a>.'
     sponsors_and_partners:
       title: 'Sponsorzy i partnerzy'
       sponsors: 'Sponsorzy'
       partners: 'Partnerzy'
   footer:
-    text_left: "7 Grudnia 2013 | Żydowskie Muzeum Galicja"
-    hide_message: "Keep going. Go deeper. Secret message part 1 of 4: Q29uZ3JhdHVsYXRpb24hIF"
+    text_left: "4-5 Grudnia 2014 | TODO"

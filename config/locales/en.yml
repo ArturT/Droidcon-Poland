@@ -1,14 +1,10 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
-
 en:
-  hello: "Hello world"
   words:
     show_larger_map: "Show larger map"
     last_updated: 'last updated'
   meta:
-    title: "KrakDroid"
-    description: "Android conference in Cracow"
+    title: "Droidcon Cracow"
+    description: "Android conference in Cracow, Poland."
     keywords: "mobile, android, smartphones, linux, cracow, it conference"
   common:
     coming_soon: 'Coming soon.'
@@ -27,8 +23,8 @@ en:
   page:
     what_where_how:
       title: 'What? Where? How?'
-      what_is_krakdroid_title: 'What is KrakDroid?'
-      conference_description_html: "KrakDroid is <strong>free conference</strong> about programming on Android platform. It will be held on 7th December 2013 in Cracow, Poland. More information coming soon."
+      what_is_krakdroid_title: 'What is Droidcon Cracow?'
+      conference_description_html: "Droidcon Cracow is <strong>free conference</strong> about programming on Android platform. It will be held on 4th - 5th December 2014 in Cracow, Poland. More information coming soon."
       sponsors_title: 'Sponsors'
       become_a_sponsore: 'Become a sponsor'
       partners_title: 'Partners'
@@ -42,14 +38,13 @@ en:
       title: 'Place and contact'
       we_are_here:
         title: "We are here"
-        description_html: 'KrakDroid conference will be held on 7th December 2013 at <a href="http://www.en.galiciajewishmuseum.org">the Galicia Jewish Museum</a>.'
+        description_html: 'Droidcon Cracow conference will be held on 4th-5th December 2014 at TODO (Place)'
       write_to_us:
         title: 'Write to us'
-        description_html: 'Find us on <a href="https://www.facebook.com/KrakDroid">Facebook</a>, <a href="https://plus.google.com/101136791804282588345">Google+</a> or <a href="https://twitter.com/KrakDroid">Twitter</a>.'
+        description_html: 'Find us on <a href="https://www.facebook.com/DroidconCracow">Facebook</a>, <a href="https://plus.google.com/101136791804282588345">Google+</a> or <a href="https://twitter.com/DroidconCracow">Twitter</a>.'
     sponsors_and_partners:
       title: 'Sponsors and partners'
       sponsors: 'Sponsors'
       partners: 'Partners'
   footer:
-    text_left: "7 December 2013 | Galicia Jewish Museum"
-    hide_message: "Keep going. Go deeper. Secret message part 1 of 4: Q29uZ3JhdHVsYXRpb24hIF"
+    text_left: "4th - 5th December 2014 | TODO"
