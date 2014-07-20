@@ -8,7 +8,7 @@ set :repo_url, 'git@github.com:ArturT/Droidcon-Poland.git'
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
 
 # Default deploy_to directory is /var/www/my_app
-set :deploy_to, '/home/droidcon-poland'
+set :deploy_to, '/home/rails/droidcon-poland'
 
 # Default value for :scm is :git
 # set :scm, :git
