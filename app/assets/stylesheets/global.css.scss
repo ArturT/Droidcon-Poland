@@ -1,3 +1,8 @@
+$gray-text: #bbb;
+$green-text: #a8de25;
+
 body {
   font-family: RobotoRegular;
+  color: $gray-text;
+  background-image: url(asset-path('droidcon/body-bg.png'));
 }
