@@ -13,11 +13,11 @@ app_port = 8080
 app_dir = "/home/#{system_user}/#{app_name}"
 stdout_path "#{app_dir}/shared/log/unicorn.stdout.log"
 stderr_path "#{app_dir}/shared/log/unicorn.stderr.log"
-pid "/tmp/#{app_name}-unicorn.pid"
+pid "#{app_dir}/shared/tmp/#{app_name}-unicorn.pid"
 
 # Listening
 listen app_port, :tcp_nopush => true
-listen "/tmp/#{app_name}.sock", :backlog => 2048
+listen "#{app_dir}/shared/tmp/#{app_name}.sock", :backlog => 2048
 
 # See http://unicorn.bogomips.org/Unicorn/Configurator.html for complete
 # documentation.
