@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
   before_filter :set_locale
 
   def set_locale
-    allowed_languages = %w(pl en)
+    allowed_languages = %w(en)
 
     if allowed_languages.include?(params[:locale])
       I18n.locale = params[:locale]
