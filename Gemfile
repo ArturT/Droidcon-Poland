@@ -28,6 +28,10 @@ gem 'just-datetime-picker'
 gem 'mini_magick'
 gem 'carrierwave'
 
+gem 'capistrano'
+gem 'capistrano-bundler'
+gem 'capistrano-rails'
+gem 'capistrano-rvm'
 
 group :development do
   gem 'spring'
