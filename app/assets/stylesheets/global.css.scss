@@ -1,8 +1,19 @@
 $gray-text: #bbb;
 $green-text: #a8de25;
+$blue-text: #00c8e2;
 
 body {
-  font-family: RobotoRegular;
-  color: $gray-text;
   background-image: url(asset-path('droidcon/body-bg.png'));
+}
+
+.text-white {
+  color: white;
+}
+
+.text-gray {
+  color: rgb(217,217,217);
+}
+
+.top-offset {
+  margin-top: 4em;
 }
