@@ -1,98 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="index,follow,all" />
     <title><%= t 'meta.title' %></title>
     <meta name="description" content="<%= t 'meta.description' %>" />
     <meta name="keywords" content="<%= t 'meta.keywords' %>" />
     <meta property="og:image" content="<%= asset_path('layout/krakdroid-square.png') %>" />
     <%= favicon_link_tag 'favicon.ico' %>
-    <%= stylesheet_link_tag 'application', :media => 'all' %>
+    <%= stylesheet_link_tag 'application' %>
+    <%= javascript_include_tag "vendor/modernizr" %>
     <%= javascript_include_tag 'application' %>
     <%= csrf_meta_tags %>
   </head>
   <body>
-    <span class="id_is_p2_of_4" id="lvdSB3aW4ga3Jha2Ryb2lkIHN0aWNrZXJ"></span>
-    <span id="top_hook"></span>
-    <span id="top_second_hook"></span>
-    <div class="container">
-      <div class="container_inner">
-        <div id="arrow_container">
-          <div id="arrow_container_inner">
-            <div id="arrow"></div>
-          </div>
-        </div>
-        <div class="logo_div">
-          <div class="dragon-eye"></div>
-          <%= menu_arrow('speakers', '#speakers', 'left') %>
-          <%= menu_arrow('schedule', '#schedule', 'left') %>
-          <%= menu_arrow('location', '#contact', 'left') %>
-          <%= menu_arrow('contact', '#contact', 'left') %>
+  <nav class="top-bar" data-topbar>
+    <ul class="title-area">
+      <li class="name">
+      <h1><a href="#">Droidcon Poland</a></h1>
+      </li>
+      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    </ul>
 
-          <%= menu_arrow('organizers', '#organizers', 'right') %>
-          <%= menu_arrow('sponsors', '#sponsors', 'right') %>
-          <%= menu_arrow('partners', '#partners', 'right') %>
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li class="active"><a href="#">Register - Coming soon</a></li>
+      </ul>
 
-          <div class="choose_language"><%= choose_language() %></div>
-
-          <div class="call_for_papers">
-            <%# call_for_papers() %>
-            <%= registration_button() %>
-          </div>
-        </div>
-        <%= yield %>
-      </div>
-    </div>
-
-    <div class="footer">
-      <div class="footer_container">
-        <div class="footer_inner">
-          <div class="text_left">
-            KrakDroid.pl | <%= t 'footer.text_left' %>
-          </div>
-          <div class="text_right">
-            &copy; All rights reserved | Design by <%= link_to 'Rafał Trzop', 'http://www.rafaltrzop.com' %> | Coding by <%= link_to 'Artur Trzop', 'http://www.webook.pl' %>
-            <!-- Thanks for help Tomasz Giereś -->
-          </div>
-        </div>
-      </div>
-    </div>
+      <!-- Left Nav Section -->
+      <ul class="left">
+        <!-- <li><a href="#">Home</a></li> -->
+      </ul>
+    </section>
+  </nav>
+    <%= yield %>
 
     <% if Rails.env.production? %>
-      <script type="text/javascript">
+      <!-- Add GA code -->
+    <% end %>
 
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-1985994-34']);
-        _gaq.push(['_trackPageview']);
+    <!-- facebook -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
 
-        (function() {
-         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-         })();
-
-       </script>
-     <% end %>
-     <!-- facebook -->
-     <div id="fb-root"></div>
-     <script>(function(d, s, id) {
-       var js, fjs = d.getElementsByTagName(s)[0];
-       if (d.getElementById(id)) return;
-       js = d.createElement(s); js.id = id;
-       js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-       fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));</script>
-
-     <!-- google plus -->
-     <!-- Place this tag after the last +1 button tag. -->
-     <script type="text/javascript">
-       (function() {
-        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-        po.src = 'https://apis.google.com/js/plusone.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-        })();
-      </script>
-      <!-- <%= Base64.encode64(t('footer.hide_message')) %> -->
-    </body>
-  </html>
+    <!-- google plus -->
+    <!-- Place this tag after the last +1 button tag. -->
+    <script type="text/javascript">
+      (function() {
+       var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+       po.src = 'https://apis.google.com/js/plusone.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+       })();
+     </script>
+  </body>
+</html>
