@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="index,follow,all" />
     <title><%= t 'meta.title' %></title>
     <meta name="description" content="<%= t 'meta.description' %>" />
     <meta name="keywords" content="<%= t 'meta.keywords' %>" />
     <meta property="og:image" content="<%= asset_path('layout/krakdroid-square.png') %>" />
     <%= favicon_link_tag 'favicon.ico' %>
-    <%= stylesheet_link_tag 'application', :media => 'all' %>
+    <%= stylesheet_link_tag 'application' %>
+    <%= javascript_include_tag "vendor/modernizr" %>
     <%= javascript_include_tag 'application' %>
     <%= csrf_meta_tags %>
   </head>
