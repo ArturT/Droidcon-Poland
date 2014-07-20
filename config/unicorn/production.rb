@@ -7,7 +7,7 @@ rails_env = ENV["RAILS_ENV"] || ENV['RACK_ENV'] || app_default_env
 workers_number = ENV['APP_SERVER_COUNT'] || (rails_env == app_default_env ? 4 : 1)
 system_user = "rails"
 app_name = "droidcon-poland"
-app_port = 8080
+app_port = 3000
 
 # Paths
 app_dir = "/home/#{system_user}/#{app_name}"
