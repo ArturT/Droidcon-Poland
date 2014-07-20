@@ -40,4 +40,6 @@ Remove `admin@example.com` user with password `password` after deploy to product
 
 # Deploy
 
-Not yet.
+Your ssh key should be on server.
+
+    $ cap production deploy
