@@ -54,7 +54,6 @@ namespace :deploy do
       # Your restart mechanism here, for example:
       # execute :touch, release_path.join('tmp/restart.txt')
       execute "sudo /etc/init.d/unicorn-droidcon-poland stop"
-      execute "sleep 3"
       execute "sudo /etc/init.d/unicorn-droidcon-poland start"
     end
   end
