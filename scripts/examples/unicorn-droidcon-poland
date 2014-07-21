@@ -9,7 +9,7 @@ PID_FILE=${DIR}/tmp/pids/${APP_NAME}-unicorn.pid
 case $1 in
    start)
       cd $DIR
-      su -l -c "cd $DIR && RAILS_ENV=$APP_DEFAULT_ENV bundle exec unicorn -c config/unicorn/production.rb -D" $SYSTEM_USER >/dev/null 2>&1
+      su -l -c "cd $DIR && RAILS_ENV=$APP_DEFAULT_ENV bundle exec unicorn -c config/unicorn/production.rb -D" root >/dev/null 2>&1
       ;;
     stop)
       cd $DIR
