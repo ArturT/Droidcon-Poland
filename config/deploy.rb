@@ -41,8 +41,7 @@ namespace :deploy do
     on roles(:app), in: :sequence, wait: 5 do
       # Your restart mechanism here, for example:
       # execute :touch, release_path.join('tmp/restart.txt')
-      pid = "#{release_path}/tmp/pids/droidcon-poland-unicorn.pid"
-      execute "if [ -e #{pid} ]; then kill -USR2 `cat #{pid}`; fi"
+      execute "service unicorn-droidcon-poland stop && sleep 3 && service unicorn-droidcon-poland start"
     end
   end
 
