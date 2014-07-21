@@ -8,15 +8,11 @@ PID_FILE=${DIR}/tmp/pids/${APP_NAME}-unicorn.pid
 
 case $1 in
   start)
-      cd $DIR
       su -l -c "cd $DIR && RAILS_ENV=$APP_DEFAULT_ENV bundle exec unicorn -c config/unicorn/production.rb -D" root >/dev/null 2>&1
       ;;
-  restart)
-      if [ -e $PID_FILE ]; then kill -USR2 `cat $PID_FILE`; fi;;
   stop)
-      cd $DIR
-      kill `cat $PID_FILE` ;;
+      if [ -e $PID_FILE ]; then kill `cat $PID_FILE`; fi;;
      *)
-      echo "usage: $APP_NAME-unicorn {start|stop}" ;;
+      echo "usage: unicorn-$APP_NAME {start|stop}" ;;
 esac
 exit 0
