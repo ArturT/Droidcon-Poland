@@ -31,6 +31,6 @@ ActiveAdmin.register Schedule do
       f.input :end_time, as: :just_datetime_picker
     end
 
-    f.buttons
+    f.actions
   end
 end
