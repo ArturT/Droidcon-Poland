@@ -15,6 +15,6 @@ case $1 in
       cd $DIR
       kill `cat $PID_FILE` ;;
     *)
-      echo "usage: $APP_NAME-$APP_DEFAULT_ENV-unicorn {start|stop}" ;;
+      echo "usage: $APP_NAME-unicorn {start|stop}" ;;
 esac
 exit 0
