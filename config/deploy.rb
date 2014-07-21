@@ -38,10 +38,12 @@ namespace :deploy do
 
   desc 'Restart application'
   task :restart do
-    invoke 'unicorn:restart'
+    #invoke 'unicorn:restart'
     on roles(:app), in: :sequence, wait: 5 do
       # Your restart mechanism here, for example:
       # execute :touch, release_path.join('tmp/restart.txt')
+      pid = "#{release_path}/tmp/droidcon-poland-unicorn.pid"
+      execute "if [ -e #{pid} ]; then kill -USR2 `cat #{pid}`; fi"
     end
   end
 
