@@ -1,0 +1,10 @@
+defaults:
+  host: 'localhost'
+
+development:
+  host: 'localhost:3000'
+
+#test:
+
+production:
+  host: 'droidcon.pl'

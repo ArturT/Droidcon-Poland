@@ -9,6 +9,9 @@ if defined?(Bundler)
   # Bundler.require(:default, :assets, Rails.env)
 end
 
+A9n.root = File.expand_path('../..', __FILE__)
+A9n.load
+
 module DroidconPoland
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
@@ -56,5 +59,7 @@ module DroidconPoland
 
     config.assets.precompile += %w(active_admin.js active_admin.css active_admin/print.css)
     config.assets.initialize_on_precompile = false
+
+    config.action_mailer.default_url_options = { host: A9n.host }
   end
 end

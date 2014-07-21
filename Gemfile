@@ -33,6 +33,8 @@ gem 'capistrano-bundler'
 gem 'capistrano-rails'
 gem 'capistrano-rvm'
 
+gem 'a9n'
+
 group :development do
   gem 'spring'
   gem 'spring-commands-rspec'

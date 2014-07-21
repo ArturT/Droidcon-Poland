@@ -25,6 +25,7 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
+    a9n (0.3.0)
     actionmailer (4.1.4)
       actionpack (= 4.1.4)
       actionview (= 4.1.4)
@@ -264,6 +265,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  a9n
   activeadmin!
   awesome_print
   capistrano
