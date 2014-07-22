@@ -55,6 +55,7 @@ namespace :deploy do
       # execute :touch, release_path.join('tmp/restart.txt')
       #execute "/etc/init.d/unicorn-droidcon-poland stop"
       #execute "/etc/init.d/unicorn-droidcon-poland start"
+      execute "/etc/init.d/unicorn-droidcon-poland restart"
     end
   end
 
