@@ -35,25 +35,13 @@ set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public
 # set :keep_releases, 5
 
 namespace :deploy do
-
-  task :start do
-    on roles(:app), in: :sequence, wait: 5 do
-      execute "sudo /etc/init.d/unicorn-droidcon-poland start"
-    end
-  end
-
-  task :stop do
-    on roles(:app), in: :sequence, wait: 5 do
-      execute "sudo /etc/init.d/unicorn-droidcon-poland stop"
-    end
-  end
-
   desc 'Restart application'
   task :restart do
     on roles(:app), in: :sequence, wait: 5 do
       # Your restart mechanism here, for example:
       # execute :touch, release_path.join('tmp/restart.txt')
-      execute "sudo /etc/init.d/unicorn-droidcon-poland restart"
+      execute "sudo /etc/init.d/unicorn-droidcon-poland stop"
+      execute "sudo /etc/init.d/unicorn-droidcon-poland start"
     end
   end
 
@@ -65,6 +53,20 @@ namespace :deploy do
       # within release_path do
       #   execute :rake, 'cache:clear'
       # end
+    end
+  end
+end
+
+namespace :unicorn do
+  task :start do
+    on roles(:app), in: :sequence, wait: 5 do
+      execute "sudo /etc/init.d/unicorn-droidcon-poland start"
+    end
+  end
+
+  task :stop do
+    on roles(:app), in: :sequence, wait: 5 do
+      execute "sudo /etc/init.d/unicorn-droidcon-poland stop"
     end
   end
 end
