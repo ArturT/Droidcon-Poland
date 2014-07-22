@@ -4,7 +4,7 @@ APP_NAME=droidcon-poland
 APP_DEFAULT_ENV=production
 SYSTEM_USER=rails
 DIR=/home/${SYSTEM_USER}/${APP_NAME}/current
-PID_FILE=${DIR}/tmp/pids/${APP_NAME}-unicorn.pid
+PID_FILE=/home/${SYSTEM_USER}/${APP_NAME}/shared/tmp/pids/${APP_NAME}-unicorn.pid
 
 case $1 in
   start)

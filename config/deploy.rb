@@ -53,8 +53,7 @@ namespace :deploy do
     on roles(:app), in: :sequence, wait: 5 do
       # Your restart mechanism here, for example:
       # execute :touch, release_path.join('tmp/restart.txt')
-      execute "sudo /etc/init.d/unicorn-droidcon-poland stop"
-      execute "sudo /etc/init.d/unicorn-droidcon-poland start"
+      execute "sudo /etc/init.d/unicorn-droidcon-poland restart"
     end
   end
 
