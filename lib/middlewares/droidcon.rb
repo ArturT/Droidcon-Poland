@@ -1,5 +1,5 @@
 module Middlewares
-  class Droidcon
+  class DroidconRedirector
     def initialize(app)
       @app = app
     end
