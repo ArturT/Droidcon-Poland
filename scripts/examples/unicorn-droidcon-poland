@@ -10,12 +10,17 @@ case $1 in
   start)
       su -l -c "cd $DIR && RAILS_ENV=$APP_DEFAULT_ENV bundle exec unicorn -c config/unicorn/production.rb -D" root >/dev/null 2>&1
       ;;
+  restart)
+      if [ -e $PID_FILE ]; then
+        pid=`cat $PID_FILE`;
+        su -l root -c "kill -USR2 $pid" >/dev/null 2>&1;
+      fi;;
   stop)
       if [ -e $PID_FILE ]; then
         pid=`cat $PID_FILE`;
         su -l root -c "kill $pid" >/dev/null 2>&1;
       fi;;
      *)
-      echo "usage: unicorn-$APP_NAME {start|stop}" ;;
+      echo "usage: unicorn-$APP_NAME {start|restart|stop}" ;;
 esac
 exit 0
