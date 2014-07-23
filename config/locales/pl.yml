@@ -3,9 +3,9 @@ pl:
     show_larger_map: "Wyświetl większą mapę"
     last_updated: 'ostatnia aktualizacja'
   meta:
-    title: "Droidcon Cracow, Poland"
+    title: "Droidcon Kraków, Poland"
     description: "Konferencja dotycząca programowania i projektowania na system Android. Kraków 4-5 grudnia 2014."
-    keywords: "mobile, systemy mobilne, telefony, android, linux, kraków, cracow, konferencja it"
+    keywords: "mobile, systemy mobilne, telefony, android, linux, kraków, Kraków, Cracow, konferencja it"
   common:
     coming_soon: 'Już wkrótce.'
   logo:
@@ -17,14 +17,14 @@ pl:
       organizers: 'Organizatorzy'
       sponsors: 'Sponsorzy'
       partners: 'Partnerzy'
-    call_for_papers_html: 'Podziel się swoim doświadczeniem<br /> i zostań prelegentem na Droidcon Cracow.'
+    call_for_papers_html: 'Podziel się swoim doświadczeniem<br /> i zostań prelegentem na Droidcon Kraków.'
     call_for_papers_button: 'Zgłoś prezentację'
     registration_button: 'Rejestracja'
   page:
     what_where_how:
       title: 'Co? Gdzie? Jak?'
-      what_is_krakdroid_title: 'Czym jest Droidcon Cracow?'
-      conference_description_html: "Droidcon Cracow jest konferencją poświęconą tworzeniu aplikacji na platformę Android, która odbędzie się 4-5 grudnia 2014 w Krakowie."
+      what_is_krakdroid_title: 'Czym jest Droidcon Kraków?'
+      conference_description_html: "Droidcon Kraków jest konferencją poświęconą tworzeniu aplikacji na platformę Android, która odbędzie się 4-5 grudnia 2014 w Krakowie."
       sponsors_title: 'Sponsorzy'
       become_a_sponsore: 'Zostań sponsorem'
       partners_title: 'Partnerzy'
@@ -38,10 +38,10 @@ pl:
       title: 'Dojazd i kontakt'
       we_are_here:
         title: 'Jesteśmy tutaj'
-        description_html: 'Konferencja Droidcon Cracow odbędzie się 4-5 Grudnia 2014 w TODO'
+        description_html: 'Konferencja Droidcon Kraków odbędzie się 4-5 Grudnia 2014 w TODO'
       write_to_us:
         title: 'Napisz do nas'
-        description_html: 'Czekamy na twoje komentarze na <a href="https://www.facebook.com/DroidconCracow">Facebooku</a>, <a href="https://plus.google.com/101136791804282588345">Google+</a> i <a href="https://twitter.com/DroidconCracow">Twitterze</a>.'
+        description_html: 'Czekamy na twoje komentarze na <a href="https://www.facebook.com/DroidconKraków">Facebooku</a>, <a href="https://plus.google.com/101136791804282588345">Google+</a> i <a href="https://twitter.com/DroidconKraków">Twitterze</a>.'
     sponsors_and_partners:
       title: 'Sponsorzy i partnerzy'
       sponsors: 'Sponsorzy'
