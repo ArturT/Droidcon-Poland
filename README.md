@@ -3,9 +3,9 @@
 Conference Website
 
 
-# Development env
+# Development - setup project
 
-    /config/database.yml.example.mysql
+    $ cp config/database.yml.example config/database.yml
 
 
 ## Carrierwave gem requires
@@ -18,7 +18,7 @@ Conference Website
     $ sudo apt-get install imagemagick
 
 
-# Production env
+# Production
 
 Set ENVs. Generate them with `rake secret`.
 
@@ -31,15 +31,15 @@ Set ENVs. Generate them with `rake secret`.
 Remove `admin@example.com` user with password `password` after deploy to production.
 
 
-# API
-
-    /api/speakers
-    /api/schedules
-    /api/rooms
-
-
 # Deploy
 
 Your ssh key should be on server.
 
     $ cap production deploy
+
+
+# API
+
+    GET /api/speakers
+    GET /api/schedules
+    GET /api/rooms
