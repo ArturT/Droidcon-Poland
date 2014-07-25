@@ -1,6 +1,7 @@
 # Droidcon Poland
 
 [![Build Status](https://api.shippable.com/projects/53d2cc3b35ad6c640220fa87/badge/master)](https://www.shippable.com/projects/53d2cc3b35ad6c640220fa87)
+[Build Status](https://api.shippable.com/projects/53d2cc3b35ad6c640220fa87/badge/master)
 
 Conference Website
 [http://droidcon.pl](http://droidcon.pl)
