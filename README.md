@@ -28,6 +28,8 @@ Set ENVs. Generate them with `rake secret`.
     ENV['SECRET_TOKEN']
     ENV['DEVISE_SECRET_KEY']
 
+Check `scripts/examples` directory.
+
 
 ## Tips
 
@@ -42,9 +44,18 @@ Your ssh key should be on server.
 
     $ cap production deploy
 
+
 ## Autodeploy
 
 Please merge master into production branch. App will be deployed to production if tests pass.
+
+
+## Other helpful commands
+
+Start or stop unicorn server:
+
+    $ cap production unicorn:start
+    $ cap production unicorn:stop
 
 
 # API
