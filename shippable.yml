@@ -16,7 +16,7 @@ before_script:
 script:
   - bundle exec rspec spec
 after_success:
-  - ./script/ci_deploy.sh
+  - ./scripts/ci_deploy.sh
 notifications:
   email: false
     #recipients:
