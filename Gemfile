@@ -48,6 +48,10 @@ group :development, :test do
   gem 'quiet_assets'
 end
 
+group :test do
+  gem 'shoulda-matchers', require: false
+end
+
 group :production do
   gem 'unicorn'
 end
