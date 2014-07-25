@@ -1,0 +1,25 @@
+---
+language: ruby
+rvm:
+  - 2.1.2
+bundler_args: --without development
+env:
+  global:
+    - RAILS_ENV=test
+before_install:
+  - "echo 'gem: --no-ri --no-rdoc' > ~/.gemrc"
+before_script:
+  - echo '--profile' >> .rspec
+  - cp config/database.yml.example config/database.yml
+  - mysql -e 'CREATE DATABASE droidcon-poland_test CHARACTER SET utf8 COLLATE utf8_general_ci;'
+  - bundle exec rake db:schema:load
+script:
+  - bundle exec rspec spec
+after_success:
+  - ./script/ci_deploy.sh
+notifications:
+  email: false
+    #recipients:
+      #- name@example.com
+    #on_success: change
+    #on_failure: always
