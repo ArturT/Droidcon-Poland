@@ -36,9 +36,15 @@ Remove `admin@example.com` user with password `password` after deploy to product
 
 # Deploy
 
+## Manual deploy
+
 Your ssh key should be on server.
 
     $ cap production deploy
+
+## Autodeploy
+
+Please merge master into production branch. App will be deployed to production if tests pass.
 
 
 # API
