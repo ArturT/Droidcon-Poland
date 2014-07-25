@@ -11,7 +11,7 @@ before_install:
 before_script:
   - echo '--profile' >> .rspec
   - cp config/database.yml.example config/database.yml
-  - mysql -e 'CREATE DATABASE `droidcon-poland_test` CHARACTER SET utf8 COLLATE utf8_general_ci;'
+  - mysql -e 'CREATE DATABASE `droidcon_poland_test` CHARACTER SET utf8 COLLATE utf8_general_ci;'
   - bundle exec rake db:schema:load
 script:
   - bundle exec rspec spec
