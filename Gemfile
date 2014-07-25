@@ -21,6 +21,8 @@ gem 'jquery_datepicker', github: 'ArturT/jquery_datepicker', branch: 'rails4'
 
 gem 'foundation-rails'
 
+gem 'non-stupid-digest-assets'
+
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'devise'
 gem 'just-datetime-picker'
