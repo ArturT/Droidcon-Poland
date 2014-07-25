@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: git://github.com/gregbell/active_admin.git
-  revision: 9cfc45330e5ad31977b3ac7b2ccc1f8d6146c73f
+  revision: a8ae008ec9632110bf33443ce7090dfef9cca480
   specs:
     activeadmin (1.0.0.pre)
       arbre (~> 1.0)
@@ -25,7 +25,7 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    a9n (0.3.0)
+    a9n (0.3.1)
     actionmailer (4.1.4)
       actionpack (= 4.1.4)
       actionview (= 4.1.4)
@@ -146,7 +146,7 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.25.1)
-    mini_magick (3.7.0)
+    mini_magick (3.8.0)
       subexec (~> 0.2.1)
     mini_portile (0.6.0)
     minitest (5.4.0)
@@ -155,7 +155,7 @@ GEM
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (2.9.1)
-    nokogiri (1.6.2.1)
+    nokogiri (1.6.3.1)
       mini_portile (= 0.6.0)
     orm_adapter (0.5.0)
     polyamorous (1.0.0)
@@ -192,14 +192,14 @@ GEM
     ref (1.0.5)
     responders (1.0.0)
       railties (>= 3.2, < 5)
-    rspec-core (3.0.2)
+    rspec-core (3.0.3)
       rspec-support (~> 3.0.0)
-    rspec-expectations (3.0.2)
+    rspec-expectations (3.0.3)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.0.0)
-    rspec-mocks (3.0.2)
+    rspec-mocks (3.0.3)
       rspec-support (~> 3.0.0)
-    rspec-rails (3.0.1)
+    rspec-rails (3.0.2)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       railties (>= 3.0)
@@ -207,7 +207,7 @@ GEM
       rspec-expectations (~> 3.0.0)
       rspec-mocks (~> 3.0.0)
       rspec-support (~> 3.0.0)
-    rspec-support (3.0.2)
+    rspec-support (3.0.3)
     sass (3.2.19)
     sass-rails (4.0.3)
       railties (>= 4.0.0, < 5.0)
