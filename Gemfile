@@ -55,6 +55,7 @@ end
 
 group :test do
   gem 'shoulda-matchers', require: false
+  gem 'timecop'
 end
 
 group :production do
