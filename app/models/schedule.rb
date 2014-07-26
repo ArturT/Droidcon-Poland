@@ -13,9 +13,6 @@ class Schedule < ActiveRecord::Base
   scope :with_time, -> { where('start_time IS NOT NULL AND end_time IS NOT NULL') }
   scope :start_time_asc, -> { order('start_time ASC') }
 
-  #validates :start_time, presence: true
-  #validates :end_time, presence: true
-  #validates :speaker, presence: true
   validates :room, presence: true
 
   def self.last_updated
