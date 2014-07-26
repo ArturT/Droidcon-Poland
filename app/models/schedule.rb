@@ -16,7 +16,6 @@ class Schedule < ActiveRecord::Base
   #validates :speaker, presence: true
   validates :room, presence: true
   validate :valid_time
-  validate :valid_speaker
   validate :valid_time_day
 
   def self.last_updated
@@ -44,15 +43,6 @@ class Schedule < ActiveRecord::Base
 
     unless start_time.year == end_time.year
       errors.add(:start_time, 'start time year should be equal end time year')
-    end
-  end
-
-  def valid_speaker
-    speaker = Speaker.where(id: speaker_id.to_i)
-    if speaker.size == 1
-      if speaker.first.organizer
-        errors.add(:speaker_id, 'is organizer')
-      end
     end
   end
 end
