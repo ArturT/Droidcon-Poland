@@ -7,6 +7,8 @@ describe Schedule do
   it { should belong_to(:room) }
   it { should validate_presence_of(:room) }
 
+  it_behaves_like 'schedule time validator'
+
   describe '.last_updated' do
     let(:s1) { FactoryGirl.create(:schedule) }
     let(:s2) { FactoryGirl.create(:schedule) }
