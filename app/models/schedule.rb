@@ -8,10 +8,6 @@ class Schedule < ActiveRecord::Base
   scope :with_time, -> { where('start_time IS NOT NULL AND end_time IS NOT NULL') }
   scope :start_time_asc, -> { order('start_time ASC') }
 
-  validates :topic_pl, presence: true
-  validates :topic_en, presence: true
-  #validates :description_pl, presence: true
-  #validates :description_en, presence: true
   #validates :start_time, presence: true
   #validates :end_time, presence: true
   #validates :speaker_id, presence: true

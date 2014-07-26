@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140726123240) do
+ActiveRecord::Schema.define(version: 20140726124106) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "resource_id",   null: false
@@ -63,15 +63,11 @@ ActiveRecord::Schema.define(version: 20140726123240) do
   end
 
   create_table "schedules", force: true do |t|
-    t.string   "topic_pl"
-    t.string   "topic_en"
-    t.text     "description_pl"
-    t.text     "description_en"
     t.datetime "start_time"
     t.datetime "end_time"
     t.integer  "speaker_id"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.integer  "room_id"
   end
 
