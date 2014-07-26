@@ -37,6 +37,9 @@ gem 'capistrano-rvm'
 
 gem 'a9n'
 
+gem 'globalize', '~> 4.0.2'
+#gem 'globalize-accessors'
+
 group :development do
   gem 'spring'
   gem 'spring-commands-rspec'
