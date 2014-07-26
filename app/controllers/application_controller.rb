@@ -3,14 +3,18 @@ class ApplicationController < ActionController::Base
   before_filter :set_locale
 
   def set_locale
-    if I18n.available_locales.include?(params[:locale].to_sym)
-      I18n.locale = params[:locale]
+    if I18n.available_locales.include?(locale_param)
+      I18n.locale = locale_param
     else
       # remove unnecessary fake locale param from url
-      redirect_to root_path unless params[:locale].blank?
+      redirect_to root_path unless locale_param.blank?
 
       I18n.locale = I18n.default_locale
     end
+  end
+
+  def locale_param
+    params[:locale].to_sym if params[:locale]
   end
 
   def default_url_options(options={})
