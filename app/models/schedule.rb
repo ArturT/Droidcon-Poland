@@ -1,4 +1,7 @@
 class Schedule < ActiveRecord::Base
+  translates :topic, :description
+  globalize_accessors
+
   just_define_datetime_picker :start_time
   just_define_datetime_picker :end_time
 

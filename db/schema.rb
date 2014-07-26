@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140726124106) do
+ActiveRecord::Schema.define(version: 20140726124536) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "resource_id",   null: false
@@ -61,6 +61,18 @@ ActiveRecord::Schema.define(version: 20140726124106) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  create_table "schedule_translations", force: true do |t|
+    t.integer  "schedule_id", null: false
+    t.string   "locale",      null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "topic"
+    t.text     "description"
+  end
+
+  add_index "schedule_translations", ["locale"], name: "index_schedule_translations_on_locale", using: :btree
+  add_index "schedule_translations", ["schedule_id"], name: "index_schedule_translations_on_schedule_id", using: :btree
 
   create_table "schedules", force: true do |t|
     t.datetime "start_time"
