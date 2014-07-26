@@ -13,27 +13,11 @@ class Schedule < ActiveRecord::Base
 
   #validates :start_time, presence: true
   #validates :end_time, presence: true
-  #validates :speaker_id, presence: true
-  validates :room_id, presence: true
+  #validates :speaker, presence: true
+  validates :room, presence: true
   validate :valid_time
   validate :valid_speaker
   validate :valid_time_day
-
-  def topic
-    if I18n.locale == :en
-      topic_en
-    else
-      topic_pl
-    end
-  end
-
-  def description
-    if I18n.locale == :en
-      description_en
-    else
-      description_pl
-    end
-  end
 
   def self.last_updated
     select('updated_at').order('updated_at DESC').limit(1).first.try(:updated_at)
