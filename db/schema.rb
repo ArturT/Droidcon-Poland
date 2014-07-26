@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20121204212029) do
+ActiveRecord::Schema.define(version: 20140726085503) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "resource_id",   null: false
@@ -45,6 +45,17 @@ ActiveRecord::Schema.define(version: 20121204212029) do
 
   add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true, using: :btree
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true, using: :btree
+
+  create_table "room_translations", force: true do |t|
+    t.integer  "room_id",    null: false
+    t.string   "locale",     null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "name",       null: false
+  end
+
+  add_index "room_translations", ["locale"], name: "index_room_translations_on_locale", using: :btree
+  add_index "room_translations", ["room_id"], name: "index_room_translations_on_room_id", using: :btree
 
   create_table "rooms", force: true do |t|
     t.string   "name_pl",    null: false

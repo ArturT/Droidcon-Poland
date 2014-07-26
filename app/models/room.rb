@@ -1,4 +1,6 @@
 class Room < ActiveRecord::Base
+  translates :name
+
   has_many :schedules, dependent: :destroy
 
   validates :name_pl, presence: true
