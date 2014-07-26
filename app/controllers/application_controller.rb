@@ -3,9 +3,7 @@ class ApplicationController < ActionController::Base
   before_filter :set_locale
 
   def set_locale
-    allowed_languages = %w(en)
-
-    if allowed_languages.include?(params[:locale])
+    if I18n.available_locales.include?(params[:locale].to_sym)
       I18n.locale = params[:locale]
     else
       # remove unnecessary fake locale param from url
