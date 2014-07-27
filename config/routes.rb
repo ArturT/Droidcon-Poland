@@ -12,7 +12,11 @@ DroidconPoland::Application.routes.draw do
     namespace :api do
       namespace :v1 do
         resources :speakers, only: [:index]
-        resources :schedules, only: [:index]
+        resources :schedules, only: [:index] do
+          collection do
+            get :extra
+          end
+        end
         resources :rooms, only: [:index]
       end
     end

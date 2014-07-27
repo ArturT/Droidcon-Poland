@@ -65,3 +65,5 @@ Change `en` to other language to get localized data.
     GET /en/api/v1/speakers
     GET /en/api/v1/rooms
     GET /en/api/v1/schedules
+    # schedules with speaker and room data
+    GET /en/api/v1/schedules/extra
