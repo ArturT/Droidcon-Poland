@@ -60,6 +60,8 @@ Start or stop unicorn server:
 
 # API
 
-    GET /api/speakers
-    GET /api/schedules
-    GET /api/rooms
+Change `en` to other language to get localized data.
+
+    GET /en/api/v1/speakers
+    GET /en/api/v1/rooms
+    GET /en/api/v1/schedules
