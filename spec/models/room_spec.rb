@@ -1,5 +1,5 @@
 describe Room do
-  let(:room) { FactoryGirl.build(:room) }
+  let(:room) { build(:room) }
 
   it { expect(room).to be_valid }
 

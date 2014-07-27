@@ -1,5 +1,5 @@
 describe Speaker do
-  let(:speaker) { FactoryGirl.build(:speaker) }
+  let(:speaker) { build(:speaker) }
 
   it { expect(speaker).to be_valid }
 

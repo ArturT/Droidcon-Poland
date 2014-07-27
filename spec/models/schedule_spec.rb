@@ -1,5 +1,5 @@
 describe Schedule do
-  let(:schedule) { FactoryGirl.build(:schedule) }
+  let(:schedule) { build(:schedule) }
 
   it { expect(schedule).to be_valid }
 
@@ -10,9 +10,9 @@ describe Schedule do
   it_behaves_like 'schedule time validator'
 
   describe '.last_updated' do
-    let(:s1) { FactoryGirl.create(:schedule) }
-    let(:s2) { FactoryGirl.create(:schedule) }
-    let(:s3) { FactoryGirl.create(:schedule) }
+    let(:s1) { create(:schedule) }
+    let(:s2) { create(:schedule) }
+    let(:s3) { create(:schedule) }
 
     subject { described_class.last_updated.to_s }
 
