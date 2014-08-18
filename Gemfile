@@ -51,6 +51,7 @@ group :development, :test do
   gem 'capybara'
   gem 'awesome_print'
   gem 'quiet_assets'
+  gem 'pry'
 end
 
 group :test do
