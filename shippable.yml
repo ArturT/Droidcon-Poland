@@ -12,10 +12,12 @@ before_install:
 before_script:
   - echo '--profile' >> .rspec
   - cp config/database.yml.example config/database.yml
-  - mysql -e 'CREATE DATABASE droidcon_poland_test CHARACTER SET utf8 COLLATE utf8_general_ci;'
+  - mysql -e 'CREATE DATABASE IF NOT EXISTS droidcon_poland_test CHARACTER SET utf8 COLLATE utf8_general_ci;'
   - bundle exec rake db:schema:load
 script:
   - bundle exec rspec spec
+after_script:
+  - mysql -e 'DROP DATABASE droidcon_poland_test;'
 after_success:
   - ./scripts/ci_deploy.sh
 notifications:
