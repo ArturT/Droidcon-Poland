@@ -39,6 +39,8 @@ GEM
       activesupport (= 4.1.6)
       builder (~> 3.1)
       erubis (~> 2.7.0)
+    actionview-encoded_mail_to (1.0.4)
+      rails
     activemodel (4.1.6)
       activesupport (= 4.1.6)
       builder (~> 3.1)
@@ -285,6 +287,7 @@ PLATFORMS
 
 DEPENDENCIES
   a9n
+  actionview-encoded_mail_to
   activeadmin!
   awesome_print
   capistrano
