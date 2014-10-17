@@ -16,6 +16,8 @@ before_script:
   - bundle exec rake db:schema:load
 script:
   - bundle exec rspec spec
+after_script:
+  - mysql -e 'DROP DATABASE droidcon_poland_test;'
 after_success:
   - ./scripts/ci_deploy.sh
 notifications:
