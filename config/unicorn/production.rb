@@ -1,6 +1,3 @@
-# Should be in shared dir on server and symlinked to:
-# config/unicorn.cfg.rb
-
 # Set environment to development unless something else is specified
 app_default_env = "production" # set production or staging
 rails_env = ENV["RAILS_ENV"] || ENV['RACK_ENV'] || app_default_env
