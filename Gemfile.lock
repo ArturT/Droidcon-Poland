@@ -277,6 +277,8 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
+    unicorn-worker-killer (0.4.2)
+      unicorn (~> 4)
     warden (1.2.3)
       rack (>= 1.0)
     xpath (2.0.0)
@@ -325,3 +327,4 @@ DEPENDENCIES
   timecop
   uglifier
   unicorn
+  unicorn-worker-killer
