@@ -6,10 +6,49 @@ Conference Website
 [http://droidcon.pl](http://droidcon.pl)
 
 
-# Development - setup project
+# Development
+
+## What do I need?
+
+You need ruby. You can use [Ruby Version Manager (RVM)](http://rvm.io) with latest ruby version:
+
+    $ \curl -sSL https://get.rvm.io | bash -s stable
+
+Install [Bundler](http://bundler.io):
+
+    $ gem install bundler
+
+You need MySQL.
+
+## Set up project on your machine
+
+    $ git clone git@github.com:ArturT/Droidcon-Poland.git
+    $ cd Droidcon-Poland
 
     $ cp config/database.yml.example config/database.yml
+    # Update your username and password for MySQL in config/database.yml file
 
+    # install gems
+    $ bundle install
+
+    # create database
+    $ bundle exec rake db:create
+
+    # run db migrations
+    $ bundle exec rake db:migrate
+
+    # run db migrations for test database
+    $ RAILS_ENV=test bundle exec rake db:migrate
+
+## How to run tests
+
+    $ bundle exec rspec spec
+
+## How to run rails sever
+
+    $ bundle exec rails server
+
+Open in your browser [http://0.0.0.0:3000](http://0.0.0.0:3000).
 
 ## Carrierwave gem requires
 
@@ -34,6 +73,7 @@ Check `scripts/examples` directory.
 ## Tips
 
 Remove `admin@example.com` user with password `password` after deploy to production.
+This user was created by devise gem db migration.
 
 
 # Deploy

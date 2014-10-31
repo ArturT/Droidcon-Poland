@@ -1,7 +1,7 @@
 ---
 language: ruby
 rvm:
-  - 2.1.3
+  - 2.1.4
 bundler_args: --without development
 env:
   global:
@@ -12,12 +12,11 @@ before_install:
 before_script:
   - echo '--profile' >> .rspec
   - cp config/database.yml.example config/database.yml
+  - mysql -e 'DROP DATABASE IF EXISTS droidcon_poland_test;'
   - mysql -e 'CREATE DATABASE IF NOT EXISTS droidcon_poland_test CHARACTER SET utf8 COLLATE utf8_general_ci;'
   - bundle exec rake db:schema:load
 script:
   - bundle exec rspec spec
-after_script:
-  - mysql -e 'DROP DATABASE droidcon_poland_test;'
 after_success:
   - ./scripts/ci_deploy.sh
 notifications:
