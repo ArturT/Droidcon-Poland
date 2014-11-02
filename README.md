@@ -40,6 +40,12 @@ You need MySQL.
     # run db migrations for test database
     $ RAILS_ENV=test bundle exec rake db:migrate
 
+    # run seed - it will create an admin user
+    # login: admin@example.com
+    # password: password
+    # http://0.0.0.0:3000/admin
+    $ bundle exec rake db:seed
+
 ## How to run tests
 
     $ bundle exec rspec spec
@@ -68,12 +74,6 @@ Set ENVs. Generate them with `rake secret`.
     ENV['DEVISE_SECRET_KEY']
 
 Check `scripts/examples` directory.
-
-
-## Tips
-
-Remove `admin@example.com` user with password `password` after deploy to production.
-This user was created by devise gem db migration.
 
 
 # Deploy

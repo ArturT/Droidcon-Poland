@@ -5,3 +5,18 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+# Create a default user
+admin = OpenStruct.new(
+  email: 'admin@example.com',
+  password: 'password')
+
+if AdminUser.exists?(email: admin.email)
+  puts "[Info] Admin #{admin.email} already exists!"
+else
+  AdminUser.create!(
+    email: admin.email,
+    password: admin.password,
+    password_confirmation: admin.password)
+  puts "[Success] Admin #{admin.email} created!"
+end
