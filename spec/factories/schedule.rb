@@ -6,5 +6,10 @@ FactoryGirl.define do
     end_time DateTime.now.beginning_of_day + 1.hour
     speaker
     room
+
+    factory :fake_schedule do
+      sequence(:topic) { Faker::Lorem.sentence }
+      sequence(:description) { Faker::Lorem.paragraph(2) }
+    end
   end
 end

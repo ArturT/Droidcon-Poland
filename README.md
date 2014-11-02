@@ -44,6 +44,7 @@ You need MySQL.
     # login: admin@example.com
     # password: password
     # http://0.0.0.0:3000/admin
+    # It will create fake rooms, speakers and schedules too.
     $ bundle exec rake db:seed
 
 ## How to run tests
