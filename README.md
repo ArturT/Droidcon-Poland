@@ -47,6 +47,12 @@ You need MySQL.
     # It will create fake rooms, speakers and schedules too.
     $ bundle exec rake db:seed
 
+## How to clean
+
+If you want to remove records created by seeds you can use this rake task `lib/taks/clean.rake`:
+
+    $ bundle exec rake app:clean
+
 ## How to run tests
 
     $ bundle exec rspec spec
