@@ -20,3 +20,33 @@ else
     password_confirmation: admin.password)
   puts "[Success] Admin #{admin.email} created!"
 end
+
+puts
+
+# Create rooms, speakers, schedules
+counter = 10
+
+rooms = []
+2.times do
+  rooms << FactoryGirl.create(:fake_room)
+  puts "[Success] Room #{rooms.last.name} created!"
+end
+
+puts
+
+speakers = []
+counter.times do
+  # use factory girl called fake_speaker_with_photo if you want to store image on your machine instead of using fallback photo
+  speakers << FactoryGirl.create(:fake_speaker)
+  puts "[Success] Speaker #{speakers.last.name} created!"
+end
+
+puts
+
+schedules = []
+counter.times do |i|
+  schedules << FactoryGirl.create(:fake_schedule,
+                                  speaker: speakers[i],
+                                  room: rooms[i % rooms.count])
+  puts "[Success] Schedule #{schedules.last.topic} created!"
+end

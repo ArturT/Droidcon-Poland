@@ -1,6 +1,8 @@
 # encoding: utf-8
 
 class PhotoUploader < CarrierWave::Uploader::Base
+  WIDTH = 200
+  HEIGHT = 200
 
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
@@ -28,7 +30,7 @@ class PhotoUploader < CarrierWave::Uploader::Base
   #   "/images/fallback/" + [version_name, "default.png"].compact.join('_')
   # end
   def default_url
-    "http://www.gravatar.com/avatar/00000000000000000000000000000000?d=blank&f=y&s=200"
+    "http://robohash.org/#{model.id}.png?size=#{WIDTH}x#{HEIGHT}"
   end
 
   # Process files as they are uploaded:

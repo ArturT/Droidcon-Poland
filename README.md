@@ -44,7 +44,14 @@ You need MySQL.
     # login: admin@example.com
     # password: password
     # http://0.0.0.0:3000/admin
+    # It will create fake rooms, speakers and schedules too.
     $ bundle exec rake db:seed
+
+## How to clean
+
+If you want to remove records created by seeds you can use this rake task `lib/taks/clean.rake`:
+
+    $ bundle exec rake app:clean
 
 ## How to run tests
 
@@ -65,6 +72,9 @@ Open in your browser [http://0.0.0.0:3000](http://0.0.0.0:3000).
     # Ubuntu
     $ sudo apt-get install imagemagick
 
+# Front-end changes
+
+Application is using [Zurb Foundation](http://foundation.zurb.com/docs/) framework. Keep it in mind during html changes.
 
 # Production
 
