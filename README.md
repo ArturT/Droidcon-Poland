@@ -72,6 +72,9 @@ Open in your browser [http://0.0.0.0:3000](http://0.0.0.0:3000).
     # Ubuntu
     $ sudo apt-get install imagemagick
 
+# Front-end changes
+
+Application is using [Zurb Foundation](http://foundation.zurb.com/docs/) framework. Keep it in mind during html changes.
 
 # Production
 
