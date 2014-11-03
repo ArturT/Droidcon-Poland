@@ -58,3 +58,25 @@
     <% end %>
   </div>
 </div>
+
+<div class="row">
+  <div class="small-12 large-12 columns top-offset">
+    <h1>Agenda</h1>
+      <% @schedules.group_by(&:room).sort.each do |room, schedules| %>
+        <br><br>
+        <h2 class="text-white"><%= room.name %></h2>
+        <% schedules.each do |schedule| %>
+          <div class="row">
+            <div class="small-12 large-12 columns top-offset-small">
+              <h3><%= schedule.topic %></h3>
+              <h4>
+                <span class="text-white"><%= schedule.speaker.name %></span>
+                <small><%= schedule.start_time.to_s(:short) %> - <%= schedule.end_time.to_s(:short) %></small>
+              </h4>
+              <%= schedule.description %>
+            </div>
+          </div>
+        <% end %>
+      <% end %>
+  </div>
+</div>
