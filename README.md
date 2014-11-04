@@ -78,6 +78,10 @@ Open in your browser [http://0.0.0.0:3000](http://0.0.0.0:3000).
 
 Application is using [Zurb Foundation](http://foundation.zurb.com/docs/) framework. Keep it in mind during html changes.
 
+# Continuous Integration
+
+If you have access to this repository you can sign in to [shippable.com](https://shippable.com) with github account then you will see the project's builds.
+
 # Production
 
 Set ENVs. Generate them with `rake secret`.
