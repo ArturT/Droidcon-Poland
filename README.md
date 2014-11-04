@@ -1,6 +1,8 @@
 # Droidcon Poland
 
-[![Build Status](https://api.shippable.com/projects/540e77c53479c5ea8f9e91dd/badge?branchName=master)](https://app.shippable.com/projects/540e77c53479c5ea8f9e91dd/builds/latest)
+Master branch [![Build Status](https://api.shippable.com/projects/540e77c53479c5ea8f9e91dd/badge?branchName=master)](https://app.shippable.com/projects/540e77c53479c5ea8f9e91dd/builds/latest)
+
+Production branch [![Build Status](https://api.shippable.com/projects/540e77c53479c5ea8f9e91dd/badge?branchName=production)](https://app.shippable.com/projects/540e77c53479c5ea8f9e91dd/builds/latest)
 
 Conference Website
 [http://droidcon.pl](http://droidcon.pl)
