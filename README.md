@@ -102,6 +102,10 @@ Your ssh key should be on server.
 
     $ cap production deploy
 
+## Run db migrations
+
+    $ cap production deploy:migrate
+
 
 ## Autodeploy
 
