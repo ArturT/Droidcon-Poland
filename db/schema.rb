@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140726124536) do
+ActiveRecord::Schema.define(version: 20141106230002) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "resource_id",   null: false
@@ -88,7 +88,7 @@ ActiveRecord::Schema.define(version: 20140726124536) do
     t.string   "locale",      null: false
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "description"
+    t.text     "description"
   end
 
   add_index "speaker_translations", ["locale"], name: "index_speaker_translations_on_locale", using: :btree
