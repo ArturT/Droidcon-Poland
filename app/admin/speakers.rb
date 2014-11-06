@@ -31,7 +31,7 @@ ActiveAdmin.register Speaker do
     f.inputs do
       f.input :name
       I18n.available_locales.each do |locale|
-        f.input :"description_#{locale}"
+        f.input :"description_#{locale}", as: :text
       end
       f.input :organizer
       f.input :photo

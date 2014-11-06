@@ -27,7 +27,7 @@ ActiveAdmin.register Schedule do
       f.input :room
       I18n.available_locales.each do |locale|
         f.input :"topic_#{locale}"
-        f.input :"description_#{locale}"
+        f.input :"description_#{locale}", as: :text
       end
       f.input :start_time, as: :just_datetime_picker
       f.input :end_time, as: :just_datetime_picker
