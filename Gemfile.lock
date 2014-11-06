@@ -6,8 +6,8 @@ GIT
     jquery_datepicker (0.4)
 
 GIT
-  remote: git://github.com/gregbell/active_admin.git
-  revision: dbbcde7800e93a0924101a24d3ae6fa10180032a
+  remote: git://github.com/activeadmin/activeadmin.git
+  revision: aa23647f29d5596663755822b7bfee09a3b989b6
   specs:
     activeadmin (1.0.0.pre)
       arbre (~> 1.0, >= 1.0.2)
