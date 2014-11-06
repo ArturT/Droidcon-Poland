@@ -84,3 +84,25 @@
       <% end %>
   </div>
 </div>
+
+<div class="row">
+  <div class="small-12 large-12 columns top-offset">
+    <h1>Organizers</h1>
+
+    <% if @organizers.any? %>
+      <% @organizers.each do |organizer| %>
+      <div class="row">
+        <div class="small-12 large-2 columns top-offset-small">
+          <%= speaker_photo(organizer.photo.thumb) %>
+        </div>
+        <div class="small-12 large-10 columns top-offset">
+          <h3><%= organizer.name %></h3>
+          <%= organizer.description %>
+        </div>
+      </div>
+      <% end %>
+    <% else %>
+      Coming soon.
+    <% end %>
+  </div>
+</div>
