@@ -1,3 +1,5 @@
+set :branch, 'production'
+
 # Simple Role Syntax
 # ==================
 # Supports bulk-adding hosts to roles, the primary server in each group
