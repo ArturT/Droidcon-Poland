@@ -27,7 +27,7 @@ ActiveAdmin.register Speaker do
     actions
   end
 
-  form do |f|
+  form(:html => { :multipart => true }) do |f|
     f.inputs do
       f.input :name
       I18n.available_locales.each do |locale|
@@ -35,6 +35,7 @@ ActiveAdmin.register Speaker do
       end
       f.input :organizer
       f.input :photo
+      f.input :remove_photo, as: :boolean
     end
     f.actions
   end

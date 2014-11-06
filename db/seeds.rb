@@ -35,9 +35,9 @@ end
 puts
 
 speakers = []
-counter.times do
+counter.times do |i|
   # use factory girl called fake_speaker_with_photo if you want to store image on your machine instead of using fallback photo
-  speakers << FactoryGirl.create(:fake_speaker)
+  speakers << FactoryGirl.create(:fake_speaker, organizer: i < 3)
   puts "[Success] Speaker #{speakers.last.name} created!"
 end
 

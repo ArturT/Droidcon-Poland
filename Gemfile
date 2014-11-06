@@ -24,7 +24,7 @@ gem 'foundation-rails'
 
 gem 'non-stupid-digest-assets'
 
-gem 'activeadmin', github: 'gregbell/active_admin'
+gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
 gem 'just-datetime-picker'
 

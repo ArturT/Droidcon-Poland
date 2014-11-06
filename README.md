@@ -1,6 +1,8 @@
 # Droidcon Poland
 
-[![Build Status](https://api.shippable.com/projects/540e77c53479c5ea8f9e91dd/badge?branchName=master)](https://app.shippable.com/projects/540e77c53479c5ea8f9e91dd/builds/latest)
+Master branch [![Build Status](https://api.shippable.com/projects/540e77c53479c5ea8f9e91dd/badge?branchName=master)](https://app.shippable.com/projects/540e77c53479c5ea8f9e91dd/builds/latest)
+
+Production branch [![Build Status](https://api.shippable.com/projects/540e77c53479c5ea8f9e91dd/badge?branchName=production)](https://app.shippable.com/projects/540e77c53479c5ea8f9e91dd/builds/latest)
 
 Conference Website
 [http://droidcon.pl](http://droidcon.pl)
@@ -75,6 +77,10 @@ Open in your browser [http://0.0.0.0:3000](http://0.0.0.0:3000).
 # Front-end changes
 
 Application is using [Zurb Foundation](http://foundation.zurb.com/docs/) framework. Keep it in mind during html changes.
+
+# Continuous Integration
+
+If you have access to this repository you can sign in to [shippable.com](https://shippable.com) with github account then you will see the project's builds.
 
 # Production
 
