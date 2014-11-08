@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141108200556) do
+ActiveRecord::Schema.define(version: 20141108204933) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "resource_id",   null: false
@@ -103,6 +103,8 @@ ActiveRecord::Schema.define(version: 20141108200556) do
     t.string   "facebook_url"
     t.string   "twitter_url"
     t.string   "google_plus_url"
+    t.string   "linkedin_url"
+    t.string   "github_url"
   end
 
 end

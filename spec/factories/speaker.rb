@@ -9,6 +9,8 @@ FactoryGirl.define do
     sequence(:facebook_url) { Faker::Internet.url('https://facebook.com') }
     sequence(:twitter_url) { Faker::Internet.url('https://twitter.com') }
     sequence(:google_plus_url) { Faker::Internet.url('https://plus.google.com') }
+    sequence(:linkedin_url) { Faker::Internet.url('https://linkedin.com') }
+    sequence(:github_url) { Faker::Internet.url('https://github.com') }
 
     factory :fake_speaker do
       sequence(:name) { Faker::Name.name }

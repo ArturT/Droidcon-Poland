@@ -9,4 +9,6 @@ describe Speaker do
   it { should_not validate_presence_of(:facebook_url) }
   it { should_not validate_presence_of(:twitter_url) }
   it { should_not validate_presence_of(:google_plus_url) }
+  it { should_not validate_presence_of(:linkedin_url) }
+  it { should_not validate_presence_of(:github_url) }
 end

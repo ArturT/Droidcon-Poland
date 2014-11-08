@@ -27,6 +27,8 @@ ActiveAdmin.register Speaker do
     column :facebook_url
     column :twitter_url
     column :google_plus_url
+    column :linkedin_url
+    column :github_url
     actions
   end
 
@@ -42,6 +44,8 @@ ActiveAdmin.register Speaker do
       f.input :facebook_url
       f.input :twitter_url
       f.input :google_plus_url
+      f.input :linkedin_url
+      f.input :github_url
     end
     f.actions
   end
