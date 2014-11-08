@@ -21,6 +21,7 @@ gem 'jquery-ui-rails'
 gem 'jquery_datepicker', github: 'ArturT/jquery_datepicker', branch: 'rails4'
 
 gem 'foundation-rails'
+gem 'font-awesome-rails'
 
 gem 'non-stupid-digest-assets'
 
