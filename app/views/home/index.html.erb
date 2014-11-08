@@ -73,7 +73,7 @@
         </div>
         <div class="small-12 large-10 columns top-offset">
           <h3><%= speaker.name %></h3>
-          <%= simple_format(speaker.description) %>
+          <%= simple_format(speaker.description, {}, sanitize: false) %>
         </div>
       </div>
       <% end %>
@@ -98,7 +98,7 @@
                   <span class="text-white"><%= schedule.speaker.name %></span>
                   <small><%= schedule.start_time.to_s(:short) %> - <%= schedule.end_time.to_s(:short) %></small>
                 </h4>
-                <%= simple_format(schedule.description) %>
+                <%= simple_format(schedule.description, {}, sanitize: false) %>
               </div>
             </div>
           <% end %>
@@ -121,7 +121,7 @@
         </div>
         <div class="small-12 large-10 columns top-offset">
           <h3><%= organizer.name %></h3>
-          <%= simple_format(organizer.description) %>
+          <%= simple_format(organizer.description, {}, sanitize: false) %>
         </div>
       </div>
       <% end %>
