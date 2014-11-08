@@ -31,11 +31,12 @@ body {
 
 .circle-bg {
   display: block;
-  width: 140px;
-  height: 140px;
+  width: 90px;
+  height: 90px;
   border-radius: 70px;
   background-size: 100%;
   background-color: rgba(0, 200, 226, 0.8);
+  margin-left: 1.1em;
 
   &:hover {
     background-color: rgba(0, 200, 226, 1);
@@ -48,12 +49,12 @@ body {
   }
 
   &.facebook {
-    padding: 2.4em;
-    padding-left: 2.6em;
+    padding: 1.1em;
+    padding-left: 1.5em;
   }
 
   &.twitter {
-    padding: 2em;
+    padding: 1em;
   }
 }
 
@@ -64,8 +65,8 @@ body {
 .black-bg {
   background-color: rgba(0, 0, 0, 0.5);
   border: 2px solid rgba(0, 0, 0, 1);
-  padding: 2em 0;
-  margin: 3em 0;
+  padding: 1em 0;
+  margin: 2em 0;
 }
 
 .center-content {
