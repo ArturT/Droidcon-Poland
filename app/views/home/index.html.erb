@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row" id="home">
   <div class="small-12 large-6 columns top-offset">
     <%= image_tag 'droidcon/droid-with-dragon.png' %>
   </div>
@@ -14,7 +14,7 @@
   </div>
 </div>
 
-<div class="black-bg">
+<div class="black-bg" id="social">
   <div class="row">
 
     <div class="small-12 medium-6 large-6 columns">
@@ -39,19 +39,19 @@
 </div>
 
 <div class="row">
-  <div class="small-12 large-6 columns top-offset">
+  <div class="small-12 large-6 columns top-offset" id="c4p">
     <h1>Call <span class="text-white">4</span> Papers</h1>
     <%= link_to 'Submit your talk', 'http://goo.gl/forms/hjc7fFiyo3' %> and become a speaker for the very first edition of Droidcon in Poland. Talks are 30 or 45 minutes long.
   </div>
 
-  <div class="small-12 large-6 columns top-offset">
+  <div class="small-12 large-6 columns top-offset" id="sponsors">
     <h1>Sponsors</h1>
     Become a sponsor! <%= mail_to('droidconkrakow@gmail.com', 'Contact us', encode: :javascript) %>
   </div>
 </div>
 
 <div class="row">
-  <div class="small-12 large-6 columns top-offset">
+  <div class="small-12 large-6 columns top-offset" id="venue">
     <h1>Venue</h1>
     <p>
     The Manggha Museum of Japanese Art and Technology<br>
@@ -62,7 +62,7 @@
 </div>
 
 <div class="row">
-  <div class="small-12 large-12 columns top-offset">
+  <div class="small-12 large-12 columns top-offset" id="speakers">
     <h1>Speakers</h1>
 
     <% if @speakers.any? %>
@@ -84,7 +84,7 @@
 </div>
 
 <div class="row">
-  <div class="small-12 large-12 columns top-offset">
+  <div class="small-12 large-12 columns top-offset" id="agenda">
     <h1>Agenda</h1>
       <% if @schedules.any? %>
         <% @schedules.group_by(&:room).sort.each do |room, schedules| %>
@@ -110,7 +110,7 @@
 </div>
 
 <div class="row">
-  <div class="small-12 large-12 columns top-offset">
+  <div class="small-12 large-12 columns top-offset" id="organizers">
     <h1>Organizers</h1>
 
     <% if @organizers.any? %>

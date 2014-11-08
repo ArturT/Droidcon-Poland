@@ -16,4 +16,8 @@
 //= require global
 //= require_tree ../../../vendor/assets/javascripts
 
-$(function(){ $(document).foundation(); });
+$(function(){
+  $(document).foundation();
+
+  //window.bindGoToByScrollLinks();
+});
