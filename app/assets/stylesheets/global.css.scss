@@ -1,6 +1,6 @@
 $gray-text: #bbb;
-$green-text: #a8de25;
-$blue-text: #00c8e2;
+$green-text: #a8de25; // rgba(168, 222, 37, 1)
+$blue-text: #00c8e2; // rgba(0, 200, 226, 1)
 
 body {
   background-image: url(asset-path('droidcon/body-bg.png'));
@@ -27,4 +27,50 @@ body {
   height: 140px;
   border-radius: 70px;
   background-size: 100%;
+}
+
+.circle-bg {
+  display: block;
+  width: 140px;
+  height: 140px;
+  border-radius: 70px;
+  background-size: 100%;
+  background-color: rgba(0, 200, 226, 0.8);
+
+  &:hover {
+    background-color: rgba(0, 200, 226, 1);
+    cursor: pointer;
+  }
+
+  span {
+    color: black;
+    width: auto;
+  }
+
+  &.facebook {
+    padding: 2.4em;
+    padding-left: 2.6em;
+  }
+
+  &.twitter {
+    padding: 2em;
+  }
+}
+
+.circle-label {
+  padding-top: 2em;
+}
+
+.black-bg {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(0, 0, 0, 1);
+  padding: 2em 0;
+  margin: 3em 0;
+}
+
+.center-content {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em 0;
 }
