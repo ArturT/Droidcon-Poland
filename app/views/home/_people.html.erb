@@ -1,0 +1,18 @@
+<% if people.any? %>
+  <% people.each_with_index do |person, index| %>
+  <div class="row">
+    <% if index > 0 %>
+      <hr class="show-for-small hr-blue">
+    <% end %>
+    <div class="small-12 medium-3 large-2 columns top-offset">
+      <%= speaker_photo(person.photo.thumb) %>
+    </div>
+    <div class="small-12 medium-9 large-10 columns top-offset">
+      <h3><%= person.name %></h3>
+      <%= simple_format(person.description, {}, sanitize: false) %>
+    </div>
+  </div>
+  <% end %>
+<% else %>
+  Coming soon.
+<% end %>

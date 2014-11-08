@@ -67,21 +67,7 @@
   <div class="small-12 large-12 columns top-offset" id="speakers">
     <h1>Speakers</h1>
 
-    <% if @speakers.any? %>
-      <% @speakers.each do |speaker| %>
-      <div class="row">
-        <div class="small-12 large-2 columns top-offset">
-          <%= speaker_photo(speaker.photo.thumb) %>
-        </div>
-        <div class="small-12 large-10 columns top-offset">
-          <h3><%= speaker.name %></h3>
-          <%= simple_format(speaker.description, {}, sanitize: false) %>
-        </div>
-      </div>
-      <% end %>
-    <% else %>
-      Coming soon.
-    <% end %>
+    <%= render partial: 'people', locals: { people: @speakers } %>
   </div>
 </div>
 
@@ -115,20 +101,6 @@
   <div class="small-12 large-12 columns top-offset" id="organizers">
     <h1>Organizers</h1>
 
-    <% if @organizers.any? %>
-      <% @organizers.each do |organizer| %>
-      <div class="row">
-        <div class="small-12 large-2 columns top-offset-small">
-          <%= speaker_photo(organizer.photo.thumb) %>
-        </div>
-        <div class="small-12 large-10 columns top-offset">
-          <h3><%= organizer.name %></h3>
-          <%= simple_format(organizer.description, {}, sanitize: false) %>
-        </div>
-      </div>
-      <% end %>
-    <% else %>
-      Coming soon.
-    <% end %>
+    <%= render partial: 'people', locals: { people: @organizers } %>
   </div>
 </div>
