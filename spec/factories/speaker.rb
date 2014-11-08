@@ -6,6 +6,9 @@ FactoryGirl.define do
     sequence(:description) { |n| "Speaker's description #{n}" }
     organizer false
     photo nil
+    sequence(:facebook_url) { Faker::Internet.url('https://facebook.com') }
+    sequence(:twitter_url) { Faker::Internet.url('https://twitter.com') }
+    sequence(:google_plus_url) { Faker::Internet.url('https://plus.google.com') }
 
     factory :fake_speaker do
       sequence(:name) { Faker::Name.name }

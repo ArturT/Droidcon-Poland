@@ -24,6 +24,9 @@ ActiveAdmin.register Speaker do
     column :photo do |speaker|
       image_tag speaker.photo.thumb, size: '100x100'
     end
+    column :facebook_url
+    column :twitter_url
+    column :google_plus_url
     actions
   end
 
@@ -36,6 +39,9 @@ ActiveAdmin.register Speaker do
       f.input :organizer
       f.input :photo
       f.input :remove_photo, as: :boolean
+      f.input :facebook_url
+      f.input :twitter_url
+      f.input :google_plus_url
     end
     f.actions
   end

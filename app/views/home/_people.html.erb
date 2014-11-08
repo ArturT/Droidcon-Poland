@@ -8,6 +8,11 @@
       <%= speaker_photo(person.photo.thumb) %>
     </div>
     <div class="small-12 medium-9 large-10 columns top-offset">
+      <span class="pull-right">
+        <%= link_to fa_stacked_icon('facebook'), person.facebook_url if person.facebook_url %>
+        <%= link_to fa_stacked_icon('twitter'), person.twitter_url if person.twitter_url  %>
+        <%= link_to fa_stacked_icon('google-plus'), person.google_plus_url if person.google_plus_url  %>
+      </span>
       <h3><%= person.name %></h3>
       <%= simple_format(person.description, {}, sanitize: false) %>
     </div>

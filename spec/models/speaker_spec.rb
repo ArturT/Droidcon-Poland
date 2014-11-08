@@ -5,4 +5,8 @@ describe Speaker do
 
   it { should have_many(:schedules) }
   it { should validate_presence_of(:name) }
+  it { should_not validate_presence_of(:photo) }
+  it { should_not validate_presence_of(:facebook_url) }
+  it { should_not validate_presence_of(:twitter_url) }
+  it { should_not validate_presence_of(:google_plus_url) }
 end
