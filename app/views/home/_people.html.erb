@@ -9,11 +9,11 @@
     </div>
     <div class="small-12 medium-9 large-10 columns top-offset">
       <span class="pull-right">
-        <%= link_to fa_stacked_icon('facebook'), person.facebook_url if person.facebook_url %>
-        <%= link_to fa_stacked_icon('twitter'), person.twitter_url if person.twitter_url  %>
-        <%= link_to fa_stacked_icon('google-plus'), person.google_plus_url if person.google_plus_url  %>
-        <%= link_to fa_stacked_icon('linkedin'), person.linkedin_url if person.linkedin_url  %>
-        <%= link_to fa_stacked_icon('github'), person.github_url if person.github_url  %>
+        <%= link_to fa_stacked_icon('facebook'), person.facebook_url unless person.facebook_url.blank? %>
+        <%= link_to fa_stacked_icon('twitter'), person.twitter_url unless person.twitter_url.blank? %>
+        <%= link_to fa_stacked_icon('google-plus'), person.google_plus_url unless person.google_plus_url.blank? %>
+        <%= link_to fa_stacked_icon('linkedin'), person.linkedin_url unless person.linkedin_url.blank? %>
+        <%= link_to fa_stacked_icon('github'), person.github_url unless person.github_url.blank? %>
       </span>
       <h3><%= person.name %></h3>
       <%= simple_format(person.description, {}, sanitize: false) %>
