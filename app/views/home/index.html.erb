@@ -73,6 +73,9 @@
 
 <div class="row">
   <div class="small-12 large-12 columns top-offset" id="agenda">
+    <span class="pull-right">
+      <%= schedule_last_updated(@schedule_last_updated) %>
+    </span>
     <h1>Agenda</h1>
       <% if @schedules.any? %>
         <% @schedules.group_by(&:room).sort.each do |room, schedules| %>
