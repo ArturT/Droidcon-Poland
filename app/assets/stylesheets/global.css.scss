@@ -79,3 +79,8 @@ body {
 .hr-blue {
   border-color: $blue-text;
 }
+
+.blue-underline {
+  border-bottom: 1px dotted $blue-text;
+  padding-bottom: 5px;
+}
