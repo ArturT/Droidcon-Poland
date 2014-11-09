@@ -45,8 +45,12 @@ puts
 
 schedules = []
 counter.times do |i|
+  start_time = DateTime.now.beginning_of_day + (i < counter.size/2 ? 0 : 1)
+  end_time = start_time + 1.hour
   schedules << FactoryGirl.create(:fake_schedule,
                                   speaker: speakers[i],
-                                  room: rooms[i % rooms.count])
+                                  room: rooms[i % rooms.count],
+                                  start_time: start_time,
+                                  end_time: end_time)
   puts "[Success] Schedule #{schedules.last.topic} created!"
 end

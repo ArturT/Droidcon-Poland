@@ -57,6 +57,10 @@ If you want to remove records created by seeds you can use this rake task `lib/t
 
     $ bundle exec rake app:clean
 
+You can also run this to clean records and run new seeds:
+
+    $ bin/reset_seed
+
 ## How to run tests
 
     $ bundle exec rspec spec

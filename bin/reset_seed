@@ -1,0 +1,4 @@
+#!/bin/bash
+
+bundle exec rake app:clean
+bundle exec rake db:seed
