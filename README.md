@@ -7,7 +7,7 @@ Master branch [![Build Status](https://api.shippable.com/projects/540e77c53479c5
 
 Production branch [![Build Status](https://api.shippable.com/projects/540e77c53479c5ea8f9e91dd/badge?branchName=production)](https://app.shippable.com/projects/540e77c53479c5ea8f9e91dd/builds/latest)
 
-See difference between [production and master](/ArturT/Droidcon-Poland/compare/production...master).
+See difference between [production and master](https://github.com/ArturT/Droidcon-Poland/compare/production...master).
 
 
 # Development
