@@ -111,6 +111,10 @@ Your ssh key should be on server.
 
 Please merge master into production branch. App will be deployed to production if tests pass.
 
+You can use [bin/publish](bin/publish) script to do that:
+
+    $ bin/publish
+
 
 ## Other helpful commands
 
