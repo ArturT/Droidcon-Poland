@@ -79,20 +79,30 @@
     <h1>Agenda</h1>
       <% if @schedules.any? %>
         <% @schedules.group_by(&:room).sort.each do |room, schedules| %>
-          <br><br>
-          <h2 class="text-white"><%= room.name %></h2>
+        <h2 class="text-white"><%= room.name %></h2>
+        <table>
+          <thead>
+            <tr>
+              <th width="200">When &amp; Who</th>
+              <th>Topic</th>
+            </tr>
+          </thead>
+          <tbody>
           <% schedules.each do |schedule| %>
-            <div class="row">
-              <div class="small-12 large-12 columns top-offset-small">
+            <tr>
+              <td>
+                <h5><%= schedule.start_time.to_s(:hour_and_minutes) %> - <%= schedule.end_time.to_s(:hour_and_minutes) %></h5>
+                <%= schedule.start_time.to_s(:month_and_day) %>
+              </td>
+              <td>
                 <h3><%= schedule.topic %></h3>
-                <h4>
-                  <span class="text-white"><%= schedule.speaker.name %></span>
-                  <small><%= schedule.start_time.to_s(:short) %> - <%= schedule.end_time.to_s(:short) %></small>
-                </h4>
+                <p><%= link_to schedule.speaker.name, '#' %></p>
                 <%= simple_format(schedule.description, {}, sanitize: false) %>
-              </div>
-            </div>
+              </td>
+            </tr>
           <% end %>
+          </tbody>
+        </table>
         <% end %>
       <% else %>
         Coming soon.
