@@ -1,6 +1,6 @@
 <% if people.any? %>
   <% people.each_with_index do |person, index| %>
-  <div class="row">
+  <div class="row" id="person-<%= person.id %>">
     <% if index > 0 %>
       <hr class="show-for-small hr-blue">
     <% end %>

@@ -17,3 +17,9 @@ window.bindGoToByScrollLinks = ->
       e.preventDefault()
       id = $(@).attr('href')
       window.goToByScroll(id, 0, 50)
+
+window.bindGoToByScrollPerson = ->
+  $('.x-go-to-person').click (e) ->
+    e.preventDefault()
+    id = $(@).attr('href')
+    window.goToByScroll(id, 0, 0)

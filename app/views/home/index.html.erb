@@ -96,7 +96,7 @@
               </td>
               <td>
                 <h3><%= schedule.topic %></h3>
-                <p><%= link_to schedule.speaker.name, '#' %></p>
+                <p><%= link_to schedule.speaker.name, "#person-#{schedule.speaker.id}", class: 'x-go-to-person' %></p>
                 <%= simple_format(schedule.description, {}, sanitize: false) %>
               </td>
             </tr>
