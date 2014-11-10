@@ -1,5 +1,6 @@
 FactoryGirl.define do
   factory :schedule do
+    sequence(:language) { A9n.languages.sample }
     sequence(:topic) { |n| "Topic #{n}" }
     sequence(:description) { |n| "Description #{n}" }
     start_time DateTime.now.beginning_of_day

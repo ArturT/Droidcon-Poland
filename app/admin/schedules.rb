@@ -12,6 +12,7 @@ ActiveAdmin.register Schedule do
     column :room_id do |schedule|
       schedule.room.name unless schedule.room.blank?
     end
+    column :language
     I18n.available_locales.each do |locale|
       column :"topic_#{locale}"
       column :"description_#{locale}"
@@ -25,6 +26,7 @@ ActiveAdmin.register Schedule do
     f.inputs do
       f.input :speaker
       f.input :room
+      f.input :language, as: :select, collection: A9n.languages.map{ |v| [v,v] }
       I18n.available_locales.each do |locale|
         f.input :"topic_#{locale}"
         f.input :"description_#{locale}", as: :text

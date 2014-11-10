@@ -14,6 +14,9 @@ class Schedule < ActiveRecord::Base
   scope :start_time_asc, -> { order('start_time ASC') }
 
   validates :room, presence: true
+  validates :language,
+    presence: true,
+    inclusion: { in: A9n.languages }
 
   def self.last_updated
     select('updated_at').order('updated_at DESC').limit(1).first.try(:updated_at)
