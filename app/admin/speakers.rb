@@ -6,14 +6,8 @@ ActiveAdmin.register Speaker do
   end
 
   scope :all, default: true
-
-  scope :speakers do
-    Speaker.speakers
-  end
-
-  scope :organizers do
-    Speaker.organizers
-  end
+  scope :speakers
+  scope :organizers
 
   index do
     column :name
