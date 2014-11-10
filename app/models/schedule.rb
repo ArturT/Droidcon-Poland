@@ -18,4 +18,8 @@ class Schedule < ActiveRecord::Base
   def self.last_updated
     select('updated_at').order('updated_at DESC').limit(1).first.try(:updated_at)
   end
+
+  def month_and_day
+    start_time.to_s(:month_and_day)
+  end
 end
