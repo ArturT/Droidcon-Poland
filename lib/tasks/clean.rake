@@ -4,5 +4,6 @@ namespace :app do
     Room.destroy_all
     Speaker.destroy_all
     Schedule.destroy_all
+    Brand.destroy_all
   end
 end

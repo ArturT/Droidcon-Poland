@@ -55,3 +55,12 @@ counter.times do |i|
                                   end_time: end_time)
   puts "[Success] Schedule #{schedules.last.topic} created!"
 end
+
+puts
+
+Brand::CATEGORIES.each do |category|
+  brand = FactoryGirl.create(:brand, category: category)
+  puts "[Success] Brand #{brand.name} created!"
+  brand = FactoryGirl.create(:fake_brand_with_image, category: category)
+  puts "[Success] Brand with image #{brand.name} created!"
+end
