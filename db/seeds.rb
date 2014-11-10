@@ -24,7 +24,7 @@ end
 puts
 
 # Create rooms, speakers, schedules
-counter = 10
+counter = 15
 
 rooms = []
 2.times do
@@ -45,7 +45,8 @@ puts
 
 schedules = []
 counter.times do |i|
-  start_time = DateTime.now.beginning_of_day + (i < counter.size/2 ? 0 : 1)
+  extra_days = (i < counter.size/2 ? 0 : 1)
+  start_time = DateTime.now.beginning_of_day + extra_days + (i..counter).to_a.sample.hours
   end_time = start_time + 1.hour
   schedules << FactoryGirl.create(:fake_schedule,
                                   speaker: speakers[i],
