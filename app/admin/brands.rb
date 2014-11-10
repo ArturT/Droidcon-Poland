@@ -8,7 +8,7 @@ ActiveAdmin.register Brand do
     column :category
     column :name
     column :image do |brand|
-      image_tag brand.image.thumb
+      link_to image_tag(brand.image.thumb), brand.url
     end
     actions
   end
@@ -17,6 +17,7 @@ ActiveAdmin.register Brand do
     f.inputs do
       f.input :category, as: :select, collection: Brand::CATEGORIES.map{ |v| [v,v] }
       f.input :name
+      f.input :url
       f.input :image
       f.input :remove_image, as: :boolean
     end

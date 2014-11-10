@@ -115,6 +115,32 @@
   </div>
 </div>
 
+<% @sponsors.each do |category, brands| %>
+<% next if brands.empty? %>
+<div class="row">
+  <div class="small-12 large-12 columns top-offset" id="organizers">
+    <h1><%= category.capitalize %> Sponsors</h1>
+
+    <% brands.each do |brand| %>
+      <%= banner(brand.image, brand.url, brand.name) %>
+    <% end %>
+  </div>
+</div>
+<% end %>
+
+<% @brands.each do |category, brands| %>
+<% next if brands.empty? %>
+<div class="row">
+  <div class="small-12 large-12 columns top-offset" id="organizers">
+    <h1><%= category.capitalize %>s</h1>
+
+    <% brands.each do |brand| %>
+      <%= banner(brand.image, brand.url, brand.name) %>
+    <% end %>
+  </div>
+</div>
+<% end %>
+
 <div class="row">
   <div class="small-12 large-12 columns top-offset" id="organizers">
     <h1>Organizers</h1>

@@ -18,4 +18,5 @@ class Brand < ActiveRecord::Base
     presence: true,
     inclusion: { in: CATEGORIES }
   validates :name, presence: true
+  validates :url, presence: true
 end

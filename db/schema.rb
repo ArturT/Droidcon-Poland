@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141110212046) do
+ActiveRecord::Schema.define(version: 20141110220028) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "resource_id",   null: false
@@ -52,6 +52,7 @@ ActiveRecord::Schema.define(version: 20141110212046) do
     t.string   "image"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "url"
   end
 
   add_index "brands", ["category"], name: "index_brands_on_category", using: :btree
