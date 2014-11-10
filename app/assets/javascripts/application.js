@@ -19,5 +19,5 @@
 $(function(){
   $(document).foundation();
 
-  //window.bindGoToByScrollLinks();
+  window.bindGoToByScrollLinks();
 });

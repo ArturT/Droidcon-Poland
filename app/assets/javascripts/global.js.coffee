@@ -13,6 +13,7 @@ window.goToByScroll = (obj, allowed_margin, up_limit) ->
 
 window.bindGoToByScrollLinks = ->
   $('.x-go-to-by-scroll-links a').click (e) ->
-    e.preventDefault()
-    id = $(@).attr('href')
-    window.goToByScroll(id, 0, 50)
+    unless $('.menu-icon').is(':visible')
+      e.preventDefault()
+      id = $(@).attr('href')
+      window.goToByScroll(id, 0, 50)
