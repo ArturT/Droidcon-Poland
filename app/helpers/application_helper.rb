@@ -20,8 +20,8 @@ module ApplicationHelper
     end
   end
 
-  def speaker_photo(photo_url)
-    raw %{<div class="circle-photo" style="background-image: url(#{asset_path(photo_url)});"></div>}
+  def speaker_photo(photo_url, css_class=nil)
+    raw %{<div class="circle-photo #{css_class}" style="background-image: url(#{asset_path(photo_url)});"></div>}
   end
 
   def menu_arrow(title, jump_to, left_or_right)

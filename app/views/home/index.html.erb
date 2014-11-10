@@ -90,13 +90,15 @@
           <tbody>
           <% schedules.each do |schedule| %>
             <tr>
-              <td>
+              <td valign="top" class="text-center">
                 <h5><%= schedule.start_time.to_s(:hour_and_minutes) %> - <%= schedule.end_time.to_s(:hour_and_minutes) %></h5>
-                <%= schedule.start_time.to_s(:month_and_day) %>
-              </td>
-              <td>
-                <h3><%= schedule.topic %></h3>
+                <p><%= schedule.start_time.to_s(:month_and_day) %></p>
+                <center><%= speaker_photo(schedule.speaker.photo.thumb, 'circle-photo-small') %></center>
+                <br>
                 <p><%= link_to schedule.speaker.name, "#person-#{schedule.speaker.id}", class: 'x-go-to-person' %></p>
+              </td>
+              <td valign="top">
+                <h3><%= schedule.topic %></h3>
                 <%= simple_format(schedule.description, {}, sanitize: false) %>
               </td>
             </tr>
