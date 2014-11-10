@@ -91,7 +91,7 @@
           <% schedules.each do |schedule| %>
             <tr>
               <td valign="top" class="text-center">
-                <h5><%= schedule.start_time.to_s(:hour_and_minutes) %> - <%= schedule.end_time.to_s(:hour_and_minutes) %></h5>
+                <h3 class="text-blue"><%= schedule.start_time.to_s(:hour_and_minutes) %> - <%= schedule.end_time.to_s(:hour_and_minutes) %></h3>
                 <p><%= schedule.start_time.to_s(:month_and_day) %></p>
                 <center><%= speaker_photo(schedule.speaker.photo.thumb, 'circle-photo-small') %></center>
                 <br>
