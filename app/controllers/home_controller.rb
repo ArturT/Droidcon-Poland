@@ -15,4 +15,7 @@ class HomeController < ApplicationController
       partner: Brand.partner,
     }
   end
+
+  def registration_tips
+  end
 end

@@ -20,5 +20,7 @@ DroidconPoland::Application.routes.draw do
         resources :rooms, only: [:index]
       end
     end
+
+    get 'registration_tips', to: 'home#registration_tips'
   end
 end

@@ -18,6 +18,12 @@ body {
   color: $blue-text;
 }
 
+.white-strong {
+  strong {
+    color: white;
+  }
+}
+
 .top-offset {
   margin-top: 4em;
 }

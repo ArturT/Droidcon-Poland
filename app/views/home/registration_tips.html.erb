@@ -1,0 +1,84 @@
+<div class="row" id="home">
+  <div class="large-12 columns top-offset white-strong">
+    <h1>Registration Instruction in <span class="text-white">English</span></h1>
+
+    <p>
+      We are terribly sorry for the inconvenience of polish language at the registration site. We decided to use for this purpose Evenea.pl and it doesn’t support English language yet. Therefore here are instructions in English for how to buy a ticket.
+    </p>
+
+    <ol>
+      <li>
+        Click the Registration button on the <%= link_to 'http://droidcon.pl', '/' %> site. That will redirect you to Evenea.pl registration form.
+      </li>
+
+      <li>
+        <p>
+          Choose one of the items:
+        </p>
+        <p>
+          <ul>
+            <li>
+              <strong>Early Bird Ticket</strong> - 196,80 zł (40 Euro + VAT) for registration before 17 of November 2014
+            </li>
+            <li>
+              <strong>Lazy Bird Ticket</strong> - 393,60 zł (80 Euro + VAT) for registration after 17 of November 2014
+            </li>
+          </ul>
+        </p>
+        <p>
+          To this price there will be added some small amount for the online payment.
+        </p>
+        <p>
+          <%= image_tag 'evenea/payment_method.png' %>
+        </p>
+      </li>
+
+      <li>
+        Click a button “<strong>Buy</strong>”
+      </li>
+
+      <li>
+        The next screen will require to log in either with your Evenea account (if you don’t have one you’ll have to create one) or with your Facebook account.
+        <p>
+          <ul>
+            <li>
+              If you have a discount code place it in a box with a title “Kod promocyjny”.
+            </li>
+            <li>
+              If you want to receive an invoice, select the checkbox “Chcę otrzymać rachunek”.
+            </li>
+          </ul>
+        </p>
+      </li>
+
+      <li>
+        <p>
+          Next step is to pick your payment method. If you are not from Poland check the option “<strong>Paypal</strong>”, that will allow you to pay with your Credit or Debit card.
+        </p>
+        <p>
+          <%= image_tag 'evenea/choose_ticket.png' %>
+        </p>
+      </li>
+
+      <li>
+        Click “<strong>Dalej</strong>” (Next) button.
+      </li>
+
+      <li>
+        After that the system will allow you to complete the payment. To do it click on “<strong>Zapłać</strong>” (Pay). It will redirect you to the Paypal payment site where you will be able to  perform your payment with you Paypal account or with using your card .
+      </li>
+
+      <li>
+        At the end of the process the system will allow you to download your ticket. To do that click on “<strong>Pobierz bilet</strong>” (Download the ticket).
+      </li>
+
+      <li>
+        After successful registration you will receive an email with the confirmation.
+      </li>
+    </ol>
+
+    <p>
+      If you have any trouble, contact us via email: <%= mail_to('droidconkrakow@gmail.com', 'droidconkrakow@gmail.com', encode: :javascript) %>
+    </p>
+  </div>
+</div>
