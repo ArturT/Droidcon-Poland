@@ -16,7 +16,10 @@ window.bindGoToByScrollLinks = ->
     unless $('.menu-icon').is(':visible')
       e.preventDefault()
       id = $(@).attr('href')
-      window.goToByScroll(id, 0, 50)
+      if window.location.pathname == '/'
+        window.goToByScroll(id, 0, 50)
+      else
+        window.location.href = window.location.origin + '/' + id
 
 window.bindGoToByScrollPerson = ->
   $('.x-go-to-person').click (e) ->
