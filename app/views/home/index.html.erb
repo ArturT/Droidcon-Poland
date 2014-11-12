@@ -56,17 +56,6 @@
 </div>
 
 <div class="row">
-  <div class="small-12 large-6 columns top-offset" id="venue">
-    <h1>Venue</h1>
-    <p>
-    The Manggha Museum of Japanese Art and Technology<br>
-    ul. Marii Konopnickiej 26 Kraków
-    </p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2561.8970406964036!2d19.931527000000003!3d50.05076!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b6e166a8117%3A0x9076d27e065dbd87!2sManggha+Centre!5e0!3m2!1sen!2s!4v1413580553125" width="400" height="300" frameborder="0" style="border:0"></iframe>
-  </div>
-</div>
-
-<div class="row">
   <div class="small-12 large-12 columns top-offset" id="speakers">
     <h1>Speakers</h1>
 
@@ -118,6 +107,14 @@
   </div>
 </div>
 
+<div class="row">
+  <div class="small-12 large-12 columns top-offset" id="organizers">
+    <h1>Organizers</h1>
+
+    <%= render partial: 'people', locals: { people: @organizers } %>
+  </div>
+</div>
+
 <% @sponsors.each do |category, brands| %>
 <% next if brands.empty? %>
 <div class="row">
@@ -145,9 +142,12 @@
 <% end %>
 
 <div class="row">
-  <div class="small-12 large-12 columns top-offset" id="organizers">
-    <h1>Organizers</h1>
-
-    <%= render partial: 'people', locals: { people: @organizers } %>
+  <div class="large-12 columns top-offset" id="venue">
+    <h1>Venue</h1>
+    <p>
+    The Manggha Museum of Japanese Art and Technology<br>
+    ul. Marii Konopnickiej 26 Kraków
+    </p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2561.8970406964036!2d19.931527000000003!3d50.05076!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b6e166a8117%3A0x9076d27e065dbd87!2sManggha+Centre!5e0!3m2!1sen!2s!4v1413580553125" width="100%" height="500" frameborder="0" style="border:0"></iframe>
   </div>
 </div>
