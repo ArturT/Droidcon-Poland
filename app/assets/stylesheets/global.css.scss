@@ -117,7 +117,7 @@ body {
     max-height: 200px;
     max-width: 400px;
     vertical-align: middle;
-    filter: image-url('layout/filters.svg#grayscale'); /* Firefox 3.5+ */
+    filter: image-url('global/filters.svg#grayscale'); /* Firefox 3.5+ */
     filter: gray; /* IE6-9 */
     -webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
   }
