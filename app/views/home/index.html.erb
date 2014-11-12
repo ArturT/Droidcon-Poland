@@ -115,11 +115,19 @@
   </div>
 </div>
 
+<% if @sponsors.any? or @brands.any? %>
+<div class="row">
+  <div class="small-12 large-12 columns top-offset" id="sponsors">
+    <h1>Sponsors</h1>
+  </div>
+</div>
+<% end %>
+
 <% @sponsors.each do |category, brands| %>
 <% next if brands.empty? %>
 <div class="row">
-  <div class="small-12 large-12 columns top-offset" id="sponsors">
-    <h1><%= category.capitalize %> Sponsors</h1>
+  <div class="small-12 large-12 columns top-offset">
+    <h2><span class="text-white"><%= category.capitalize %></span> Sponsors</h2>
 
     <% brands.each do |brand| %>
       <%= banner(brand.image, brand.url, brand.name) %>
@@ -131,8 +139,8 @@
 <% @brands.each do |category, brands| %>
 <% next if brands.empty? %>
 <div class="row">
-  <div class="small-12 large-12 columns top-offset" id="brands">
-    <h1><%= category.capitalize %>s</h1>
+  <div class="small-12 large-12 columns top-offset">
+    <h2 class="text-white"><%= category.capitalize %>s</h2>
 
     <% brands.each do |brand| %>
       <%= banner(brand.image, brand.url, brand.name) %>
