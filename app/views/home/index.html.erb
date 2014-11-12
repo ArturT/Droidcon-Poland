@@ -49,7 +49,7 @@
     <%= link_to 'Submit your talk', 'http://goo.gl/forms/hjc7fFiyo3' %> and become a speaker for the very first edition of Droidcon in Poland. Talks are 30 or 45 minutes long.
   </div>
 
-  <div class="small-12 large-6 columns top-offset" id="sponsors">
+  <div class="small-12 large-6 columns top-offset" id="become_sponsor">
     <h1>Sponsors</h1>
     Become a sponsor! <%= mail_to('droidconkrakow@gmail.com', 'Contact us', encode: :javascript) %>
   </div>
@@ -121,7 +121,7 @@
 <% @sponsors.each do |category, brands| %>
 <% next if brands.empty? %>
 <div class="row">
-  <div class="small-12 large-12 columns top-offset" id="organizers">
+  <div class="small-12 large-12 columns top-offset" id="sponsors">
     <h1><%= category.capitalize %> Sponsors</h1>
 
     <% brands.each do |brand| %>
@@ -134,7 +134,7 @@
 <% @brands.each do |category, brands| %>
 <% next if brands.empty? %>
 <div class="row">
-  <div class="small-12 large-12 columns top-offset" id="organizers">
+  <div class="small-12 large-12 columns top-offset" id="brands">
     <h1><%= category.capitalize %>s</h1>
 
     <% brands.each do |brand| %>
