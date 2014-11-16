@@ -18,6 +18,7 @@ DroidconPoland::Application.routes.draw do
           end
         end
         resources :rooms, only: [:index]
+        resources :brands, only: [:index]
       end
     end
 
