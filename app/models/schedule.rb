@@ -13,7 +13,6 @@ class Schedule < ActiveRecord::Base
   scope :with_time, -> { where('start_time IS NOT NULL AND end_time IS NOT NULL') }
   scope :start_time_asc, -> { order('start_time ASC') }
 
-  validates :room, presence: true
   validates :language,
     allow_blank: true,
     inclusion: { in: A9n.languages }

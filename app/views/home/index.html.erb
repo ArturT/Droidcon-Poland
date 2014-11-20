@@ -94,7 +94,9 @@
             <tr>
               <td valign="top" class="text-center">
                 <h3 class="text-blue"><%= schedule.start_time.to_s(:hour_and_minutes) %> - <%= schedule.end_time.to_s(:hour_and_minutes) %></h3>
+                <% if schedule.room %>
                 <p><%= schedule.room.name %></p>
+                <% end %>
                 <% if schedule.speaker %>
                 <center><%= speaker_photo(schedule.speaker.photo.thumb, 'circle-photo-small') %></center>
                 <br>
