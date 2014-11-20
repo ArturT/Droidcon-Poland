@@ -15,7 +15,7 @@ class Schedule < ActiveRecord::Base
 
   validates :room, presence: true
   validates :language,
-    presence: true,
+    allow_blank: true,
     inclusion: { in: A9n.languages }
 
   def self.last_updated
