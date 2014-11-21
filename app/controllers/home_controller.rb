@@ -2,7 +2,7 @@ class HomeController < ApplicationController
   def index
     @speakers = Speaker.speakers
     @organizers = Speaker.organizers
-    @schedules = Schedule.with_time.start_time_asc
+    @grouped_schedules = Schedule.grouped_schedules
     @schedule_last_updated = Schedule.last_updated
     @sponsors = {
       diamond: Brand.diamond,

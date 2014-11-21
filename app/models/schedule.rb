@@ -24,4 +24,12 @@ class Schedule < ActiveRecord::Base
   def month_and_day
     start_time.to_s(:month_and_day)
   end
+
+  def self.grouped_schedules
+    ordered_schedules = with_time.start_time_asc
+    grouped_schedules = ordered_schedules.group_by(&:month_and_day).sort
+    grouped_schedules.map do |month_and_day, schedules|
+      [month_and_day, schedules.group_by(&:start_time)]
+    end
+  end
 end

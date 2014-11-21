@@ -1,6 +1,8 @@
 $gray-text: #bbb;
 $green-text: #a8de25; // rgba(168, 222, 37, 1)
 $blue-text: #00c8e2; // rgba(0, 200, 226, 1)
+$table-bg: rgb(16, 16, 16);
+$table-even-row-bg: rgb(0, 0, 0);
 
 body {
   background-image: url(asset-path('droidcon/body-bg.png'));
@@ -134,4 +136,12 @@ body {
   .right {
     float: right;
   }
+}
+
+.table-bg {
+  background-color: $table-bg !important;
+}
+
+.table-bg-even {
+  background-color: $table-even-row-bg !important;
 }
