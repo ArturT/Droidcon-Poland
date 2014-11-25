@@ -4,7 +4,10 @@ describe Schedule do
   it { expect(schedule).to be_valid }
 
   it { should belong_to(:speaker) }
+  it { should belong_to(:second_speaker) }
   it { should belong_to(:room) }
+  it { should_not validate_presence_of(:speaker) }
+  it { should_not validate_presence_of(:second_speaker) }
   it { should_not validate_presence_of(:room) }
   it { should_not validate_presence_of(:language) }
 

@@ -9,6 +9,7 @@ class Schedule < ActiveRecord::Base
 
   belongs_to :speaker
   belongs_to :room
+  belongs_to :second_speaker, class_name: 'Speaker'
 
   scope :with_time, -> { where('start_time IS NOT NULL AND end_time IS NOT NULL') }
   scope :start_time_asc, -> { order('start_time ASC, room_id ASC') }

@@ -12,6 +12,9 @@ FactoryGirl.define do
     sequence(:linkedin_url) { Faker::Internet.url('https://linkedin.com') }
     sequence(:github_url) { Faker::Internet.url('https://github.com') }
 
+    factory :second_speaker do
+    end
+
     factory :fake_speaker do
       sequence(:name) { Faker::Name.name }
       sequence(:description) { Faker::Lorem.paragraph }

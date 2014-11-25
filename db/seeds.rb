@@ -48,8 +48,10 @@ counter.times do |i|
   extra_days = (i < counter.size/2 ? 0 : 1)
   start_time = DateTime.now.beginning_of_day + extra_days + (i..counter).to_a.sample.hours
   end_time = start_time + 1.hour
+  second_speaker = i < 3 ? speakers[i+1] : nil
   schedules << FactoryGirl.create(:fake_schedule,
                                   speaker: speakers[i],
+                                  second_speaker: second_speaker,
                                   room: rooms[i % rooms.count],
                                   start_time: start_time,
                                   end_time: end_time)

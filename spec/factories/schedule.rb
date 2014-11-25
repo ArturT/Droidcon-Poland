@@ -6,6 +6,7 @@ FactoryGirl.define do
     start_time DateTime.now.beginning_of_day
     end_time DateTime.now.beginning_of_day + 1.hour
     speaker
+    second_speaker
     room
 
     factory :fake_schedule do

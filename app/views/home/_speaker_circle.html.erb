@@ -1,0 +1,5 @@
+<% if speaker %>
+<center><%= speaker_photo(speaker.photo.thumb, 'circle-photo-small') %></center>
+<br>
+<p><%= link_to speaker.name, "#person-#{speaker.id}", class: 'x-go-to-person' %></p>
+<% end %>
