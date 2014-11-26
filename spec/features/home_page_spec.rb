@@ -5,7 +5,7 @@ describe 'Home Page' do
 
   it do
     within '.top-bar' do
-      expect(page).to have_content 'Droidcon Kraków'
+      expect(page).to have_content 'droidcon Kraków'
     end
   end
 end
