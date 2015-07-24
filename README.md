@@ -138,3 +138,7 @@ Change `en` to other language to get localized data.
     # schedules with speaker and room data
     GET /en/api/v1/schedules/extra
     GET /en/api/v1/brands
+
+# Digital Ocean server configuration
+
+See `/etc/nginx/sites-enabled/2014.droidcon.pl`
